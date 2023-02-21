@@ -10,7 +10,7 @@
     height: 13px;
     padding: 0;
     position: relative;
-    bottom: 7vw;
+    bottom: 10vw;
     left: 45vw;
     cursor: pointer;
     background-color: #c6c6c6;
@@ -30,7 +30,7 @@
     float: left !important;
     position: relative;
     background: hwb(0deg 50% 50% / 20%);
-    padding: 350px 27px 350px 25px;
+    padding: 30px 27px 30px 25px;
     bottom: 43vw;
 }
 
@@ -38,7 +38,7 @@
     float: right !important;
     position: relative;
     background: hwb(0deg 50% 50% / 20%);
-    padding: 350px 27px 350px 25px;
+    padding: 30px 27px 30px 25px;
     bottom: 43vw;
 }
 
