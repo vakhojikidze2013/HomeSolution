@@ -144,7 +144,7 @@ html, body {
 .footer-grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2px;
+    grid-gap: 20px;
     font-size: 18px;
     line-height: 1.5;
     text-align: justify;    
