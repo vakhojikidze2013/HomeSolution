@@ -1,0 +1,28 @@
+.footer-con {
+    background-color: #25362c;
+    width: 375px;
+}
+#mobile-footer-logo
+{
+    width: 100%;
+}
+
+#logo-size {
+    width: 24px;
+}
+
+.footer-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    color: white;
+    font-size: 16px;
+}
+
+.footer-grid-item1 {
+    border-style: none solid none none;
+    border-color: white;
+}
