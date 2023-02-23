@@ -5,75 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ComfortExpress</title>
-    <link rel="stylesheet" href="content/styles/mainstyle.css">
-    <link rel="stylesheet" href="content/styles/mainIndexStyle.css">
-    <link rel="stylesheet" href="content/styles/service.css">
-    <link rel="stylesheet" href="content/styles/animation.css">
-    <link rel="stylesheet" href="content/styles/bannerCover.css">
-    <link rel="stylesheet" href="content/styles/photoAndInfos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="content/img/Logos/Logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
 
     <script src="content/scripts/lib/jquery-3.6.1.js"></script>
-    <script src="content/scripts/utils.js"></script>
-    <script src="content/scripts/mainscript.js"></script>
-    <script src="content/scripts/headerAnimation.js"></script>
-    <script src="content/scripts/headerJs.js"></script>
-    <script src="content/scripts/servicePageJs.js"></script>
+    <script src="../content/scripts/screensizeDetector.js"></script>
+
 </head>
-<body>
-<div id="header-load-container">
+<body onload = detectScreen();>
 
-</div>
-<script>
-    $(function(){
-        $("#header-load-container").load("htmls/header.html");
-    });
-</script>
-    
+    <div id="deskotMain">
 
+    </div>
 
-<div class="banner-cover">
-    <img class="banner-cover-img" alt="">
-</div>
-    
+    <div id="mobileMain">
 
+    </div>
 
-<div id="main-service-load-container">
-
-</div>
-<script>
-    $(function(){
-        $("#main-service-load-container").load("htmls/serviceSection.html");
-    });
-</script>
-
-
-
-<div id="slider-service-load-container">
-
-</div>
-<script>
-    $(function(){
-        $("#slider-service-load-container").load("htmls/serviceSlider.html");
-    });
-</script>
-
-
-
-<div id="footer-load-container">
-
-</div>
-<script>
-    $(function () {
-        $("#footer-load-container").load("htmls/footer.html");
-    });
-</script>
 
 </body>
 </html>
