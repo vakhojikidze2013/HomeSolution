@@ -3,21 +3,24 @@
     margin-top: 15%;
 }
 
-#textHeader{
-    font-size: 40px;
+#textHeader {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Lilita One', cursive;
 }
 
-#img1{
-    width: 400px;
-    height: 600px;
+#img1 {
+    width: 90%;
+    max-height: 700px;
+    display: block;
+    margin: auto;
 }
 
-#img2{
-    width: 200px;
-    height: 200px;
-}
-
-#img3{
-    width: 150px;
-    height: 150px;
+#text {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid #e0daa3;
+    margin: 5% 5%;
+    padding: 2%;
 }
