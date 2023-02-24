@@ -10,7 +10,7 @@
     height: 13px;
     padding: 0;
     position: relative;
-    bottom: 10vw;
+    bottom: 120px;
     left: 45vw;
     cursor: pointer;
     background-color: #c6c6c6;
@@ -31,7 +31,7 @@
     position: relative;
     background: hwb(0deg 50% 50% / 20%);
     padding: 30px 27px 30px 25px;
-    bottom: 43vw;
+    bottom: 550px;
 }
 
 .w3-right {
@@ -39,7 +39,7 @@
     position: relative;
     background: hwb(0deg 50% 50% / 20%);
     padding: 30px 27px 30px 25px;
-    bottom: 43vw;
+    bottom: 550px;
 }
 
 .w3-badge, .w3-tag {

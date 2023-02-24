@@ -31,10 +31,10 @@ function showDivs(n) {
 }
 
 function openServicePage() {
-    delete document.getElementsByClassName("banner-cover");
-    window.stop("htmls/serviceSection.html");
-    window.stop("htmls/serviceSlider.html");
     
+    window.stop("htmls/serviceSection.html");
+    $("#banner_cover").html("");
+    $("#slider-service-load-container").html("");
     $(function () {
         $("#main-service-load-container").load("htmls/servicePage.html");
     });
