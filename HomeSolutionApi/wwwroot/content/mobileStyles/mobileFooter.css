@@ -1,6 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 .footer-con {
     background-color: #25362c;
-    width: 375px;
+    width: 100%;
 }
 #mobile-footer-logo
 {
