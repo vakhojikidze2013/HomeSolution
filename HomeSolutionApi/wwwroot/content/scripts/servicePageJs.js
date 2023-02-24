@@ -1,6 +1,6 @@
 var isMainPage = false;
 
-const parsedServiceInfos = JSON.parse(serviceInfos);
+//const parsedServiceInfos = JSON.parse(serviceInfos);
 
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -28,4 +28,16 @@ function showDivs(n) {
     }
     x[slideIndex - 1].style.display = "flex";
     dots[slideIndex - 1].className += " w3-white";
+}
+
+function openServicePage() {
+    delete document.getElementsByClassName("banner-cover");
+    window.stop("htmls/serviceSection.html");
+    window.stop("htmls/serviceSlider.html");
+    
+    $(function () {
+        $("#main-service-load-container").load("htmls/servicePage.html");
+    });
+    
+    console.log("clicked");
 }
