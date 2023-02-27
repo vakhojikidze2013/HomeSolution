@@ -13,30 +13,32 @@ var scrollBefore = 0;
 
 //FOR DECSTOP
 window.addEventListener('scroll',function(e){
-    const scrolled = window.scrollY;
-    
-    if (scrolled >= this.window.innerHeight / screenStepper){
-        console.log("banner not view")
-        return;
-    }
+    if (headerAnimationIsActive){
+        const scrolled = window.scrollY;
+        
+        if (scrolled >= this.window.innerHeight / screenStepper){
+            // console.log("banner not view")
+            return;
+        }
 
-    if(scrollBefore > scrolled){
-        console.log("ScrollUP");
-        scrollBefore = scrolled;
-        defaultBannerCoverPx -= bannerCoverStep;
-        setBannerMovingPosition(defaultBannerCoverPx)
-        scrollSteps--;
-    }else{
-        scrollBefore = scrolled;
-        console.log("ScrollDOWN");
-        defaultBannerCoverPx += bannerCoverStep;
-        setBannerMovingPosition(defaultBannerCoverPx)
-        scrollSteps++;
-    }
+        if(scrollBefore > scrolled){
+            // console.log("ScrollUP");
+            scrollBefore = scrolled;
+            defaultBannerCoverPx -= bannerCoverStep;
+            setBannerMovingPosition(defaultBannerCoverPx)
+            scrollSteps--;
+        }else{
+            scrollBefore = scrolled;
+            // console.log("ScrollDOWN");
+            defaultBannerCoverPx += bannerCoverStep;
+            setBannerMovingPosition(defaultBannerCoverPx)
+            scrollSteps++;
+        }
 
-    if (scrolled == 0){
-        defaultBannerCoverPx = 0;
-        setBannerMovingPosition(defaultBannerCoverPx);
+        if (scrolled == 0){
+            defaultBannerCoverPx = 0;
+            setBannerMovingPosition(defaultBannerCoverPx);
+        }
     }
 })
 

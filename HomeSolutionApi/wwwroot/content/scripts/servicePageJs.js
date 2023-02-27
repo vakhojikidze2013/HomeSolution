@@ -17,38 +17,29 @@ function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("service-info-cn");
     var dots = document.getElementsByClassName("demo");
-    if (n > x.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = x.length }
+    if (n > x.length) { 
+        slideIndex = 1 
+    }
+
+    if (n < 1) { 
+        slideIndex = x.length 
+    }
+
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
-        
     }
+    
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" w3-white", "");
     }
-    x[slideIndex - 1].style.display = "flex";
+    // console.log(slideIndex)
+    // console.log(x[0])
+    // console.log(x[slideIndex - 1])
+    try{
+            x[slideIndex - 1].style.display = "flex";
     dots[slideIndex - 1].className += " w3-white";
-}
+    }
+    catch{
 
-function openServicePage() {
-    
-    window.stop("htmls/serviceSection.html");
-    $("#banner_cover").html("");
-    $("#slider-service-load-container").html("");
-    $(function () {
-        $("#main-service-load-container").load("htmls/servicePage.html");
-    });
-    
-    console.log("clicked");
-}
-
-function openAboutPage() {
-    $("#main-service-load-container").html("");
-    $("#banner_cover").html("");
-    $("#slider-service-load-container").html("");
-    $(function () {
-        $("#main-service-load-container").load("htmls/About.html");
-    });
-
-    console.log("clicked");
+    }
 }

@@ -8,3 +8,35 @@ $(document).ready(function(){
         
     });
 });
+
+
+function openServicePage() {
+    
+    window.stop("htmls/serviceSection.html");
+    $("#banner_cover").html("");
+    $("#slider-service-load-container").html("");
+    $(function () {
+        $("#main-service-load-container").load("htmls/servicePage.html");
+    });
+    
+    console.log("clicked");
+    headerAnimationIsActive = false;
+    window.scrollTo(0, 0);
+}
+
+function openAboutPage() {
+    $("#main-service-load-container").html("");
+    $("#banner_cover").html("");
+    $("#slider-service-load-container").html("");
+    $(function () {
+        $("#main-service-load-container").load("htmls/About.html");
+    });
+
+    console.log("clicked");
+    headerAnimationIsActive = false;
+    window.scrollTo(0, 0);
+}
+
+function openHomePage(){
+    
+}

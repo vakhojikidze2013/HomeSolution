@@ -1,0 +1,1 @@
+var headerAnimationIsActive = true; 
