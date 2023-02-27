@@ -1,0 +1,26 @@
+﻿#about {
+    margin-top: 17vw;
+}
+.about_text {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+    border: 2px solid;
+    padding: 50px;
+    font-size: 20px;
+}
+h1 {
+    width: auto;
+    text-align: center;
+    margin-top: 5vw;
+}
+
+ul {
+    margin-top: 5vw
+}
+ul li {
+    background-color: #e2cfb654;
+    margin: 2vw;
+    font-size: 2vw;
+    font-family: cursive;
+}
