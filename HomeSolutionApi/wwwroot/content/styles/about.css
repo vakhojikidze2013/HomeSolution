@@ -18,7 +18,7 @@ h1 {
 ul {
     margin-top: 5vw
 }
-ul li {
+#about ul li {
     background-color: #e2cfb654;
     margin: 2vw;
     font-size: 2vw;
