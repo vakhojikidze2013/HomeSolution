@@ -11,16 +11,30 @@
     <script src="../content/scripts/screensizeDetector.js"></script>
 
 </head>
-<body onload = detectScreen();>
+<body>
 
-    <div id="deskotMain">
-
-    </div>
-
-    <div id="mobileMain">
+    <div id="dm">
 
     </div>
 
+    <div id="mm">
+        
+
+    </div>
+
+    <script>
+        var screenWidth = screen.availWidth;
+
+        if (window.innerWidth < 550) {
+
+            $('#mm').load('htmls/mobileMain.html');
+            
+
+        }
+        else {
+            $("#dm").load("htmls/desktopMain.html");
+        }
+    </script>
 
 </body>
 </html>
