@@ -17,8 +17,4 @@
     <None Include="wwwroot\htmls\index.html" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\mobileHtmls\" />
-  </ItemGroup>
-
 </Project>
