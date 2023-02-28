@@ -90,7 +90,7 @@ html, body {
 }
 
     #menu li {
-        padding: 10px 0;
+        padding: 15px 0;
         font-size: 22px;
     }
 
@@ -111,6 +111,7 @@ html, body {
 
 #number {
     position: fixed;
+    z-index: 4;
     top: -8px;
     right: 15px;
     background-color: #c6d043;
@@ -118,7 +119,6 @@ html, body {
     font-weight: bold;
     text-shadow: #000 1px 0 5px;
     font-size: 20px;
-    min-width: 150px;
     border-radius: 25px;
     font-weight: bold;
 }
