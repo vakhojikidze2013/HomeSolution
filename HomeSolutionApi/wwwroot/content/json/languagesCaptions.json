@@ -1,16 +1,19 @@
-{
-    "contacts.caption": {
-        "en": "CONTACTS",
-        "ge": "კონტაქტები"
-    },
 
-    "location.caption": {
-        "en": "LOCATION",
-        "ge": "ლოკაცია"
-    },
-
-    "whyhireus.caption": {
-        "en": "WHY HIRE US",
-        "ge": ""
-    }
-}
+  
+    
+    [
+      {
+        "key": "caption.1",
+        "value": {
+          "en": "CONTACTS",
+          "ge": "კონტაქტები"
+        }
+      },
+      {
+        "key": "caption.2",
+        "value": {
+          "en": "CONTACTS",
+          "ge": "კონტაქტები"
+        }
+      }
+    ]
