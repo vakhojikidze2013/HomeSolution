@@ -9,10 +9,12 @@
     margin-top: 100px;
     margin-left: 30px;
     margin-right: 30px;
+    height: 856px;
 }
 
 #default-service-info {
     display: flex;
+    
 }
 
 #title {
@@ -33,7 +35,7 @@
 
 .service-photo {
     width: 50%;
-    height: auto;
+    height: 100%;
 }
 
 @media screen and (max-width: 767px) {

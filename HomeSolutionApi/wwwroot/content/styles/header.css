@@ -111,3 +111,6 @@
     width: 20vw;
     padding: 20px;
 }
+.navigation-ul > li:hover {
+    cursor: pointer
+}
