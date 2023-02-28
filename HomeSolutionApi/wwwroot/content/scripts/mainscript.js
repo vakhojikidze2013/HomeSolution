@@ -27,6 +27,7 @@ function openServicePage() {
 function openAboutPage() {
     $("#main-service-load-container").html("");
     $("#banner_cover").html("");
+    window.stop("#banner_cover");
     $("#slider-service-load-container").html("");
     $(function () {
         $("#main-service-load-container").load("htmls/About.html");
