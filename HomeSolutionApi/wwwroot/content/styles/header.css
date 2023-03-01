@@ -111,3 +111,28 @@
     width: 20vw;
     padding: 20px;
 }
+.lang-menu {
+    font-size: 22px;
+    padding-top: 30px;
+    padding-left: 425px;
+}
+.selected-lang {
+    white-space: nowrap;
+}
+#hypert {
+    display: inline-block;
+}
+#hypert-text {
+    text-decoration-line: none;
+    text-decoration-color: #000;
+}
+a:active {
+    color: #000000
+}
+a:link {
+    color: #000000
+}
+
+a:visited {
+    color: #000000
+}
