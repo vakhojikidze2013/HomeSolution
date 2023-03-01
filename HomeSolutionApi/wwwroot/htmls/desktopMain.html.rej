@@ -1,0 +1,9 @@
+diff a/HomeSolutionApi/wwwroot/htmls/desktopMain.html b/HomeSolutionApi/wwwroot/htmls/desktopMain.html	(rejected hunks)
+@@ -32,7 +32,6 @@
+ 
+ 
+ 
+-    <div class="banner-cover">
+     <div id="banner_cover" class="banner-cover">
+         <img class="banner-cover-img" alt="">
+     </div>

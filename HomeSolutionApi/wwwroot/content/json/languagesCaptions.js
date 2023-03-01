@@ -8,7 +8,7 @@ var languageCaptions =
 
     "location.caption": {
         "en": "LOCATION",
-        "ge": "ლოკაცია"
+        "ge": "ლოკაცია" 
     },
 
     "whyhireus.caption": {
