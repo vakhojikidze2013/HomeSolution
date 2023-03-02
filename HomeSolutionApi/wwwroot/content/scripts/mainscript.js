@@ -69,6 +69,7 @@ $(document).ready(function () {
 
             var textCaptions = Document.getLanguageCaption
             if (parsedJSON.key.match(textCaptions)) {
+
                 console.log(parsedJSON.value)
             }
         });

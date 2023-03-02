@@ -118,21 +118,12 @@
 }
 .selected-lang {
     white-space: nowrap;
+    position:absolute;
+    top:70px;
+    left: 60%;
 }
-#hypert {
+.hypert {
     display: inline-block;
-}
-#hypert-text {
-    text-decoration-line: none;
-    text-decoration-color: #000;
-}
-a:active {
-    color: #000000
-}
-a:link {
-    color: #000000
+    cursor: pointer;
 }
 
-a:visited {
-    color: #000000
-}
