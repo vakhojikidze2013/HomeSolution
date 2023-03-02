@@ -64,9 +64,14 @@ $(document).ready(function () {
 
     $.getJSON("https://localhost:44347/content/json/languagesCaptions.json", function (result) {
         $.each(result, function (i, field) {
+            const myJSON = JSON.stringify(field);
+            const parsedJSON = JSON.parse(myJSON);
 
-            /*alert(field.key);*/
+            var textCaptions = Document.getLanguageCaption
+            if (parsedJSON.key.match(textCaptions)) {
+                console.log(parsedJSON.value)
+            }
         });
-    });
-
+    });  
+     
 });
