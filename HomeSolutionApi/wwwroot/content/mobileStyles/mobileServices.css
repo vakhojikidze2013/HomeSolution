@@ -33,6 +33,8 @@
     margin-top: 10px;
     word-wrap: break-word;
     height: 120px;
+    z-index: 4;
+    position: relative;
 }
 .text1 {
     border: 10px solid white;
@@ -101,7 +103,7 @@
     text-align: center;
     font-size: 45px;
     left: -10px;
-    margin-top: 30px;
+    margin-top: 0px;
     word-wrap: break-word;
     height: 120px;
 }

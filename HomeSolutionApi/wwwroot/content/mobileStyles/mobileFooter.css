@@ -14,12 +14,13 @@ body {
     width: 24px;
     margin-top: -9px;
     margin-left: 30px;
+
 }
 
 .footer-grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(2, 210px);
+    grid-gap: 0px;
     font-size: 18px;
     line-height: 1.5;
     text-align: justify;
@@ -34,4 +35,5 @@ body {
 #grid-text {
     margin-top: 12px;
     margin-left: 30px;
+
 }
