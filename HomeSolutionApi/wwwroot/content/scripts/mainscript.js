@@ -64,15 +64,51 @@ $(document).ready(function () {
 
     $.getJSON("https://localhost:44347/content/json/languagesCaptions.json", function (result) {
         $.each(result, function (i, field) {
+            //stringed JSON
             const myJSON = JSON.stringify(field);
-            const parsedJSON = JSON.parse(myJSON);
+            //parsed JSON object
+            const contentObj = JSON.parse(myJSON);
+            // An array of HTML files to load
+            var htmlFiles = ["htmls/index.html", "htmls/desktopMain.html", "htmls/header.html", "htmls/footer.html", "htmls/about.html", "htmls/servicePage.html", "htmls/serviceSection.html", "htmls/serviceSlider.html", "htmls/mobileFooter.html", "htmls/mobileMain.html", "htmls/mobileServices.html", "htmls/lawn-care-service.html"];
 
-            var textCaptions = Document.getLanguageCaption
-            if (parsedJSON.key.match(textCaptions)) {
+            fetch(htmlFiles[i])
+                .then(response => response.text())
+                .then(data => {
+                    var parser = new DOMParser();
+                    var doc = parser.parseFromString(data, "text/html");
 
-                console.log(parsedJSON.value)
-            }
+
+                    // rest of the code here
+                    if (this.readyState == 4 && this.status == 200) {
+                        // Parse the HTML contents
+                        var parser = new DOMParser();
+                        var doc = parser.parseFromString(this.responseText, "text/html");
+
+                       
+
+                        // Loop through the keys in the JSON object
+                        for (var key in contentObj) {
+                            if (contentObj.hasOwnProperty(key)) {
+                                // Select all elements and check if their text content contains the key
+                                var elements = doc.querySelectorAll('*');
+                                for (var j = 0; j < elements.length; j++) {
+                                    if (elements[j].textContent.indexOf(key) !== -1) {
+                                        // Update the text content with the value from the JSON object
+                                        elements[j].textContent = contentObj[key];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    console.log(elements);
+                    console.log(contentObj);
+                    console.log(doc);
+                    console.log(contentObj.key);
+                    console.log(contentObj.hasOwnProperty(key));
+
+                });
         });
-    });  
-     
+
+    });
 });
