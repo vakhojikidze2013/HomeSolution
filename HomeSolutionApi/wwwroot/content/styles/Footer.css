@@ -35,7 +35,7 @@ footer {
 
 #footer-logo {
     width: 90%;
-    padding-left: 5%;
+    padding-left: 3%;
     padding-right: 5%;
 }
 
@@ -80,4 +80,5 @@ footer {
 
 .bottom-text {
     font-size: 17px;
+    text-align: center;
 }
