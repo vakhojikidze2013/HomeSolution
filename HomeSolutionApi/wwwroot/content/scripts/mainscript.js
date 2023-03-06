@@ -59,56 +59,56 @@ var language = "en";
         $("#dm").load("htmls/desktopMain.html");
     }
 
-getLanguageCaption();
-function getLanguageCaption(captionKey) {
-    console.log("clickedasasasa");
-    $.getJSON("https://localhost:44347/content/json/languagesCaptions.json"), function (json) {
+//getLanguageCaption();
+//function getLanguageCaption(captionKey) {
+//    //console.log("clickedasasasa");
+//    $.getJSON("https://localhost:44347/content/json/languagesCaptions.json"), function (json) {
 
-        var as = $(json).filter(function (i, n) { return n.website === captionKey });
+//        var as = $(json).filter(function (i, n) { return n.website === captionKey });
 
 
 
-    for (var i = 0; i < as.length; i++) {
-        alert(as[i].name + "         " + as[i].website)
-        }
+//    for (var i = 0; i < as.length; i++) {
+//        alert(as[i].name + "         " + as[i].website)
+//        }
     
-    }
-    
-
-
+//    }
     
 
-}
+
+    
+
+/*}*/
 
 
-getLanguageCaption();
-function getLanguageCaption(captionKey) {
-    console.log("clickedasasasa");
-    $.getJSON("https://localhost:44347/content/json/languagesCaptions.json"), function (json) {
+//getLanguageCaption();
+//function getLanguageCaption(captionKey) {
+//    console.log("clickedasasasa");
+//    $.getJSON("https://localhost:44347/content/json/languagesCaptions.json"), function (json) {
 
-        var as = $(json).filter(function (i, n) { return n.website === captionKey });
-
-
-
-        for (var i = 0; i < as.length; i++) {
-            alert(as[i].name + "         " + as[i].website)
-        }
-
-    }
+//        var as = $(json).filter(function (i, n) { return n.website === captionKey });
 
 
 
+//        for (var i = 0; i < as.length; i++) {
+//            alert(as[i].name + "         " + as[i].website)
+//        }
+
+//    }
 
 
-}
 
-$(document).ready(function () {
 
-    $.getJSON("https://localhost:44347/content/json/languagesCaptions.json", function (result) {
-        $.each(result, function (i, field) {
 
-            /*alert(field.key);*/
-        });
-    });
+////}
 
-});
+//$(document).ready(function () {
+
+//    $.getJSON("https://localhost:44347/content/json/languagesCaptions.json", function (result) {
+//        $.each(result, function (i, field) {
+
+//            /*alert(field.key);*/
+//        });
+//    });
+
+//});

@@ -8,9 +8,12 @@ html, body {
     position: absolute;
     top: 8.5%;
     left: 3%;
-    z-index: 1;
+    z-index: 8;
     -webkit-user-select: none;
     user-select: none;
+    transform: none;
+    font-family: 'Golos Text';
+    text-transform: uppercase;
 }
 
     #menuToggle a {
@@ -87,7 +90,6 @@ html, body {
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-    font-weight: bold;
 }
 
     #menu li {
@@ -113,17 +115,21 @@ html, body {
 
 #number {
     position: fixed;
-    z-index: 4;
-    top: 0.5%;
-    left: 60%;
+    z-index: 40;
+    font-family: 'Gill Sans MT', sans-serif;
+    font-weight: 700;
+    border: thin;
+    margin: 0;
+    padding: 6px 0px 6px 0px;
+    text-shadow: 2.5px 3.5px 1px rgb(0 0 0 / 60%);
+    top: 1.5%;
+    text-align: center;
+    left: 57%;
+    width: 42%;
     background-color: #c6d043;
     color: white;
-    font-weight: bold;
-    text-shadow: #000 1px 0 5px;
     font-size: 4.5vw;
-    border-radius: 25px;
-    font-weight: bold;
-
+    border-radius: 2vw;
 }
 
 .header-con {
