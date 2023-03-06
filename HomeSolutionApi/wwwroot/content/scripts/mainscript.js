@@ -41,7 +41,7 @@ function openAboutPage() {
 
 getLanguageCaption();
 function getLanguageCaption(captionKey) {
-    console.log("clickedasasasa");
+   // console.log("clickedasasasa");
     $.getJSON("https://localhost:44347/content/json/languagesCaptions.json"), function (json) {
 
         var as = $(json).filter(function (i, n) { return n.website === captionKey });
@@ -69,7 +69,7 @@ $(document).ready(function () {
             //parsed JSON object
             const contentObj = JSON.parse(myJSON);
             // An array of HTML files to load
-            var htmlFiles = ["htmls/index.html", "htmls/desktopMain.html", "htmls/header.html", "htmls/footer.html", "htmls/about.html", "htmls/servicePage.html", "htmls/serviceSection.html", "htmls/serviceSlider.html", "htmls/mobileFooter.html", "htmls/mobileMain.html", "htmls/mobileServices.html", "htmls/lawn-care-service.html"];
+            var htmlFiles = ["htmls/header.html", "htmls/footer.html", "htmls/about.html", "htmls/servicePage.html", "htmls/serviceSection.html", "htmls/serviceSlider.html", "htmls/mobileFooter.html", "htmls/mobileMain.html", "htmls/mobileServices.html", "htmls/lawn-care-service.html"];
 
             fetch(htmlFiles[i])
                 .then(response => response.text())
@@ -89,24 +89,30 @@ $(document).ready(function () {
                         // Loop through the keys in the JSON object
                         for (var key in contentObj) {
                             if (contentObj.hasOwnProperty(key)) {
+
+                                console.log("Checking for key:", key);
+
                                 // Select all elements and check if their text content contains the key
                                 var elements = doc.querySelectorAll('*');
+
+                                console.log("Elements:", elements);
+
                                 for (var j = 0; j < elements.length; j++) {
                                     if (elements[j].textContent.indexOf(key) !== -1) {
                                         // Update the text content with the value from the JSON object
                                         elements[j].textContent = contentObj[key];
                                     }
                                 }
-                            }
+                            }else {console.log("armushaobs amis dedac " + contentObj) }
                         }
                     }
                     
-                    console.log(elements);
-                    console.log(contentObj);
-                    console.log(doc);
-                    console.log(contentObj.key);
-                    console.log(contentObj.hasOwnProperty(key));
-
+                   // console.log(elements);
+                   // console.log(contentObj);
+                   // console.log(doc);
+                   // console.log(contentObj.key);
+                   // console.log(contentObj.hasOwnProperty(key));
+                   // console.log(textContent);
                 });
         });
 
