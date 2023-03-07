@@ -30,6 +30,7 @@ body {
     border-radius: 2vw;
     height: 60px;
     font-family: BPG ExtraSquare Mtavruli, sans-serif;
+    z-index: 4;
 }
 .text:hover {
     background-color: #ffce48;
@@ -38,6 +39,6 @@ body {
     text-align: center;
     margin-top: 14px;
     word-wrap: break-word;
-    z-index: 4;
+    z-index: 2;
     position: relative;
 }
