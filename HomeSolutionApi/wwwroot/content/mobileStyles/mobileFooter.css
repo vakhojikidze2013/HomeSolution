@@ -37,3 +37,53 @@ body {
     margin-left: 30px;
 
 }
+.info-con {
+    background-color: #25362c;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #b6ff00;
+}
+
+    nav a:hover {
+        color: rgb(255, 216, 0);
+    }
+
+p {
+    margin-top: 10px;
+    color: white;
+}
+.gmail-but{
+
+    cursor: pointer;
+    border: 0px;
+    background-color: transparent;
+    height: 24px;
+    width: 24px;
+}
+#gmail-but-img {
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 22px;
+    padding: 0px 0px 3px;
+}
+#gmail-but-img1 {
+    width: 30px;
+    height: 30px;
+}
