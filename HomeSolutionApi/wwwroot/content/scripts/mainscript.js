@@ -59,6 +59,46 @@ var language = "en";
         $("#dm").load("htmls/desktopMain.html");
     }
 
+
+function openMobileServices(x) {
+    var x=0
+    switch(x) {
+        case 0:
+            $("mobileServices-load-container").html("");
+            $("#mobileServices-load-container").load("/htmls/lawn-care-service-geo.html");
+            break;
+        case 1:
+            $("mobileServices-load-container").html("");
+            $("#mobileServices-load-container").load("/htmls/pool-cleaning-service-geo.html");
+            break;
+        case 2:
+            $("mobileServices-load-container").html("");
+            $("#mobileServices-load-container").load("/htmls/plumbing service-geo.html");
+            break;
+        case 3:
+            $("mobileServices-load-container").html("");
+            $("#mobileServices-load-container").load("/htmls/electrical-service-geo.html");
+            break;
+        case 4:
+            $("mobileServices-load-container").html("");
+            $("#mobileServices-load-container").load("/htmls/lock-changing-services-geo.html");
+            break;
+        case 5:
+            $("mobileServices-load-container").html("");
+            $("#mobileServices-load-container").load("/htmls/conditioning-service-geo.html");
+            break;
+        case 6:
+            $("mobileServices-load-container").html("");
+            $("#mobileServices-load-container").load("/htmls/universal-services-geo.html");
+            break;
+        case 7:
+            $("mobileServices-load-container").html("");
+            $("#mobileServices-load-container").load("/htmls/aquarium-cleaning-service-geo.html");
+            break;
+
+
+        }
+}
 //getLanguageCaption();
 //function getLanguageCaption(captionKey) {
 //    //console.log("clickedasasasa");

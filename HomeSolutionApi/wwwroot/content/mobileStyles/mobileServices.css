@@ -12,9 +12,6 @@
     box-shadow: 0px 0px 5px 1px #00000087;
 }
 
-body {
-    background-image: src(/content/img/Footer/footerLogo.png);
-}
 
 .text {
     border: 2px solid #ffce48;
