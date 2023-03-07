@@ -4,96 +4,95 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="/content/mobileStyles/mobileServices.css">
-    <title></title>
+    <script src="content/scripts/lib/jquery-3.6.1.js"></script>
+    <script src="content/scripts/utils.js"></script>
+    <script src="content/scripts/mainscript.js"></script>
+    <script src="content/scripts/headerAnimation.js"></script>
+    <script src="content/scripts/headerJs.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text&family=Lilita+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="main-service-container">
         <h2 class="h2-services">
-            <span>სერვისები</span>
+            <span>ჩვენი სერვისები</span>
         </h2>
         <div id="service-container">
             <div class="service-cn-one">
-
                 <div id="id=service1" class="services">
                     <div class="service-conteiner">
                         <img class="service-img" src="/content/img/service img/gazoni.jpg">
                         <div class="text">
-                            <p class="service-bottom-text">გაზონი</p>
+                            <p class="service-bottom-text" onclick="openMobileServices(0)">გაზონის მოვლა</p>
                         </div>
                     </div>
                 </div>
-
                 <div id="id=service2" class="services">
                     <div class="service-conteiner">
                         <img class="service-img" src="/content/img/service img/auz.jpg">
                         <div class="text">
-                            <p class="service-bottom-text">აუზი</p>
+                            <p class="service-bottom-text" onclick="openMobileServices(1)">აუზის წმენდა</p>
                         </div>
                     </div>
                 </div>
-
                 <div id="id=service3" class="services">
                     <div class="service-conteiner">
                         <img class="service-img" src="/content/img/service img/santeq.jpg">
                         <div class="text">
-                            <p class="service-bottom-text">სანტექნიკა</p>
+                            <p class="service-bottom-text" onclick="openMobileServices(2)">სანტექნიკა</p>
                         </div>
                     </div>
                 </div>
-
                 <div id="id=service4" class="services">
                     <div class="service-conteiner">
                         <img class="service-img" src="/content/img/service img/eleqtr.jpg">
                         <div class="text">
-                            <p class="service-bottom-text">ელექტროობა</p>
+                            <p class="service-bottom-text" onclick="openMobileServices(3)">ელექტროობა</p>
                         </div>
                     </div>
                 </div>
-
             </div>
-
             <div class="service-cn-two">
-
                 <div id="id=service5" class="services">
                     <div class="service-conteiner">
                         <img class="service-img" src="/content/img/service img/saket.jpg">
                         <div class="text">
-                            <p class="service-bottom-text">კარის შეკეთება</p>
+                            <p class="service-bottom-text" onclick="openMobileServices(4)">კარის შეკეთება</p>
                         </div>
                     </div>
                 </div>
-
                 <div id="id=service6" class="services">
                     <div class="service-conteiner">
                         <img class="service-img" src="/content/img/service img/kondincireba.jpg">
                         <div class="text">
-                            <p class="service-bottom-text">გათბობა გაგრილება</p>
+                            <p class="service-bottom-text" onclick="openMobileServices(5)">გათბობა – გაგრილება</p>
                         </div>
                     </div>
                 </div>
-
                 <div id="id=service7" class="services">
                     <div class="service-conteiner">
                         <img class="service-img" src="/content/img/service img/univers.jpg">
-                        <div class="text">
-                            <p class="service-bottom-text">უნივერსალური სამუშაოები</p>
+                        <div class="text text1">
+                            <p class="service-bottom-text" onclick="openMobileServices(6)">უნივერსალური სამუშაოები</p>
                         </div>
                     </div>
                 </div>
-
                 <div id="id=service8" class="services">
                     <img class="service-img" src="/content/img/service img/akv.jpg">
                     <div class="service-conteiner">
                         <div class="text">
-                            <p class="service-bottom-text">აკვარიუმის წმენდა</p>
+                            <p class="service-bottom-text" onclick="openMobileServices(7)">აკვარიუმის დასუფთავება</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
-
+    <script>
+        function loadHTML(url) {
+            window.location.href = url;
+        }
+    </script>
 </body>
 </html>

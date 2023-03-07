@@ -1,12 +1,17 @@
 ﻿#about {
-    margin-top: 17vw;
-}
-.about_text {
+    margin-top: 13vw;
+    text-align: center;
+    padding: 0px;
+    border: 2px solid;
     margin-left: 10vw;
     margin-right: 10vw;
-    text-align: center;
-    border: 2px solid;
-    padding: 50px;
+    margin-bottom: 5vw;
+    background-color: rgb(226, 226, 226);
+}
+.about_text {
+    
+    
+    
     font-size: 20px;
 }
 h1 {
@@ -19,8 +24,11 @@ ul {
     margin-top: 5vw
 }
 #about ul li {
-    background-color: #e2cfb654;
-    margin: 2vw;
-    font-size: 2vw;
+    background-color: #dad3ff94;
+    margin: 1vw;
+    font-size: 1vw;
     font-family: cursive;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }

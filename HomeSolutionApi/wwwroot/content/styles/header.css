@@ -27,9 +27,10 @@
     height: auto;
     top: 0px;
     right: 0;
-    background-color: rgb(184, 192, 68);
-    padding-right: 60px;
-    padding-bottom: 15px;
+    background-color: rgb(238 184 35 / 90%);
+    padding-right: 30px;
+    padding-left:30px;
+    padding-bottom: 14px;
 }
 
 #bottom-section {
@@ -48,13 +49,15 @@
     margin: 0;
     padding-left: 10px;
     padding-top: 15px;
-    text-shadow: -0.5px -0.5px 1px rgba(0, 0, 0, 0.5 );
+    text-shadow: 2.5px 3.5px 1px rgb(0 0 0 / 60%);
+    text-decoration:none;
 }
 
 #num_icon {
     display: flex;
     padding: 25px 50px 25px 20px;
     align-items: center;
+    text-shadow: 2.5px 3.5px 1px rgb(0 0 0 / 60%);
 }
 
 
@@ -110,4 +113,38 @@
 .gallery-thumbs {
     width: 20vw;
     padding: 20px;
+}
+.lang-menu {
+    font-size: 22px;
+    padding-top: 30px;
+    padding-left: 425px;
+}
+
+.selected-lang {
+    white-space: nowrap;
+}
+
+#hypert {
+    display: inline-block;
+}
+
+#hypert-text {
+    text-decoration-line: none;
+    text-decoration-color: #000;
+}
+
+a:active {
+    color: #000000
+}
+
+a:link {
+    color: #000000
+}
+
+a:visited {
+    color: #000000
+}
+
+.navigation-ul > li:hover {
+    cursor: pointer
 }

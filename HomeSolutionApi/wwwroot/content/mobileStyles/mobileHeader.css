@@ -1,15 +1,20 @@
 html, body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 #menuToggle {
     display: block;
     position: absolute;
-    top: 60px;
-    left: 13px;
-    z-index: 1;
+    top: 8.5%;
+    left: 3%;
+    z-index: 8;
     -webkit-user-select: none;
     user-select: none;
+    transform: none;
+    font-family: 'Golos Text';
+    text-transform: uppercase;
+    z-index: 3;
 }
 
     #menuToggle a {
@@ -35,7 +40,7 @@ html, body {
         z-index: 2;
         -webkit-touch-callout: none;
     }
-
+/*    sami xazi*/
     #menuToggle span {
         display: block;
         width: 40px;
@@ -71,26 +76,25 @@ html, body {
         #menuToggle input:checked ~ span:nth-last-child(2) {
             transform: rotate(-45deg) translate(0, -1px);
         }
-
+/*nacrisferi menu track gamodis*/
 #menu {
-    position: absolute;
-    width: 300px;
+    width: 50vw;
     max-width: 1900px;
-    height: 500px;
+    height: 355px;
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
+    padding-left: 100px;
     background: #e2e2e2;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-    font-weight: bold;
 }
 
     #menu li {
-        padding: 10px 0;
+        padding: 15px 0;
         font-size: 22px;
     }
 
@@ -103,26 +107,35 @@ html, body {
 }
 
 #logo {
-    width: 380px;
-    height: 100px;
+    width: 110%;
+    height: 90%;
     margin-left: -25px;
     margin-top: -2px;
+    
 }
 
 #number {
     position: fixed;
-    top: -8px;
-    right: 15px;
+    z-index: 40;
+    font-family: 'Gill Sans MT', sans-serif;
+    font-weight: 700;
+    border: thin;
+    margin: 0;
+    padding: 6px 0px 6px 0px;
+    text-shadow: 2.5px 3.5px 1px rgb(0 0 0 / 60%);
+    top: 1.5%;
+    text-align: center;
+    left: 57%;
+    width: 42%;
     background-color: #c6d043;
     color: white;
-    font-weight: bold;
-    text-shadow: #000 1px 0 5px;
-    font-size: 20px;
-    min-width: 150px;
-    border-radius: 25px;
-    font-weight: bold;
+    font-size: 4.5vw;
+    border-radius: 2vw;
+    text-decoration:none;
 }
 
 .header-con {
-    background: #AbAbAb;
+    background-color: #AbAbAb;
+    height: 125px;
+    width: 100%;
 }

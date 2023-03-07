@@ -12,7 +12,7 @@ var serviceInfos =
     },
 
     "service2": {
-        "textHeader": "აუზის რეცხვა",
+        "textHeader": "აუზის წმენდა",
         "text": "აუზის რეცხვააუზის რეცხვააუზის რეცხვააუზის რეცხვა აუზის რეცხვააუზის რეცხვა",
         "photosUrl": [
             "",
@@ -81,3 +81,4 @@ var serviceInfos =
         ]
     }
 }`
+
