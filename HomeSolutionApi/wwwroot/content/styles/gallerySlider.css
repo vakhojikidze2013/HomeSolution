@@ -1,7 +1,7 @@
 #page {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: static;
 }
 
 * {
@@ -11,13 +11,14 @@
 
 .wrapper {
     width: 900px;
+    display: block;
     height: 600px;
-    position: absolute;
     left: 50%;
-    top: 50%;
+    position: relative;
+    margin-top: 60vh;
     transform: translate3d(-50%,-50%,0);
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
 }
 
 .before,
