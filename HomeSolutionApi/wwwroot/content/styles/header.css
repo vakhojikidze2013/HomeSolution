@@ -50,6 +50,7 @@
     padding-left: 10px;
     padding-top: 15px;
     text-shadow: 2.5px 3.5px 1px rgb(0 0 0 / 60%);
+    text-decoration:none;
 }
 
 #num_icon {
