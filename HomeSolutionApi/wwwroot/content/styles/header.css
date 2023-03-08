@@ -121,13 +121,16 @@
 
 .selected-lang {
     white-space: nowrap;
-    position:absolute;
-    top:70px;
-    left: 65%;
+    position: absolute;
+    right: 3px;
+    margin-right: 2%;
 }
 
-#hypert {
+.hypert {
     display: inline-block;
+    font-size: 20px;
+    align-content: center;
+    font-family: 'Gill Sans MT', sans-serif;
 }
 
 #hypert-text {
