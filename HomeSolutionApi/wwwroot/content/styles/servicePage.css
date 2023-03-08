@@ -3,7 +3,7 @@
     margin-top: 15%;
 }
 
-#textHeader {
+.textHeader {
     text-align: center;
     font-size: 45px;
     font-family: 'Lilita One', cursive;
@@ -16,7 +16,7 @@
     margin: auto;
 }
 
-#text {
+.textCaptions {
     font-family: 'Indie Flower', cursive;
     text-align: center;
     font-size: 25px;

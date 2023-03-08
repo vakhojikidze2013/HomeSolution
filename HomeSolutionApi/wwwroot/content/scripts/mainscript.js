@@ -13,7 +13,6 @@ function openServicePage() {
         $("#main-service-load-container").load("htmls/servicePage.html");
     });
     
-    console.log("clicked");
     headerAnimationIsActive = false;
     window.scrollTo(0, 0);
 }
