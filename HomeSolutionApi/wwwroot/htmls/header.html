@@ -10,15 +10,7 @@
             <img id="main-logo" src="../content/img/header-logo.png">
             <img id="banner" src="../content/img/header-banner.png">
         </div>
-        <div>
-            <div class="lang-menu">
-                <div class="selected-lang">
-                    <div id="English" class="hypert" language="english">ENG</div>
-                    <div class="hypert"><p>/</p></div>
-                    <div id="Georgian" class="hypert" language="georgian">ქარ</div>
-                </div>
-            </div>
-        </div>
+
         <div id="number_container">
             <div id="num_icon">
                 <img src="../content/img/Logos/phone-icon.png" style="width: 30px; padding-top: 10px;" />
@@ -35,7 +27,29 @@
             <li class="nav" id="nav4"><div id="nav.caption.4"></div></li>
             <li class="nav" id="nav5" onclick="openAboutPage()"><div id="nav.caption.5"></div></li>
         </ul>
+        
+        <div>
+            <div class="selected-lang">
+                <div id="English" class="hypert" language="english">ENG</div>
+                <div class="hypert"><p>/</p></div>
+                <div id="Georgian" class="hypert" language="georgian">ქარ</div>
+            </div>
+        </div>
+
+
     </div>
 </div>
+    <script>
+    // Add an onclick event to the "english" div to switch to English
+        document.getElementById("English").onclick = function () {
+            currentLanguage = "en";
+            getAllCaptionAndSet();
+        };
+
+        // Add an onclick event to the "georgian" div to switch to Georgian
+        document.getElementById("Georgian").onclick = function () {
+            currentLanguage = "ge";
+            getAllCaptionAndSet();
+        };</script>
 </body>
 </html>

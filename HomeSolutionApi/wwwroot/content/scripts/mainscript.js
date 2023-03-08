@@ -1,5 +1,5 @@
 var isMainPage = true;
-var language = "en";
+
 
 
 
@@ -106,6 +106,11 @@ function openGalleryPage() {
     });
 
 
+// Define a variable to store the current language
+let currentLanguage = "en";
+
+
+
     function getAllCaptionAndSet() {
         $.getJSON(jsonUrl, function (result) {
             console.log(result);
@@ -119,8 +124,8 @@ function openGalleryPage() {
 
                 let currentElement = document.getElementById(field.key);
                 if (currentElement != null) {
-
-                    currentElement.innerHTML = field.value["en"]
+                    
+                    currentElement.innerHTML = field.value[currentLanguage]
                 }
 
             });
