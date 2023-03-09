@@ -114,7 +114,7 @@ html, body {
     
 }
 
-#number {
+.number {
     position: fixed;
     z-index: 40;
     font-family: 'Gill Sans MT', sans-serif;
@@ -127,6 +127,7 @@ html, body {
     text-align: center;
     left: 57%;
     width: 42%;
+    
     background-color: #c6d043;
     color: white;
     font-size: 4.5vw;
