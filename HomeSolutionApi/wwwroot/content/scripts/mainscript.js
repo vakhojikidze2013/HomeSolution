@@ -86,7 +86,8 @@ function openGalleryPage() {
 
 
 
-    var jsonUrl = "https://localhost:44347/content/json/languagesCaptions.json";
+    var jsonUrl = `${getMainUrlDomain()}content/json/languagesCaptions.json`;
+    console.log(jsonUrl);
     $(document).ready(function () {
         // An array of HTML files to load
         var htmlFiles = [
