@@ -114,7 +114,7 @@ let currentLanguage = "en";
 
     function getAllCaptionAndSet() {
         $.getJSON(jsonUrl, function (result) {
-            console.log(result);
+ 
             $.each(result, function (i, field) {
                 //console.log(i, field);
                 //stringed JSON
