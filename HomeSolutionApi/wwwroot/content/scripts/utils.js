@@ -1,35 +1,15 @@
-function windowLocationChanger(param){
+function isLocalHost(){
+    const localHost = "localhost";
+    let currentUrl = window.location.href;
 
-    let isLocal = isLocalHost();
-    if (isLocal){
-        if (param == "home"){
-            window.location.href = "index.html";
-            return;
-        }
-
-        window.location.href = param;
-        return;
-    } else {
-
-        if (param == "home"){
-            window.location.href = window.location.origin;
-            return;
-        }
-
-        let newWindowLocation = `${window.location.origin}/${param}`;
-        window.location.href = newWindowLocation; 
-        return;
-    }
+    return currentUrl.includes(localHost);
 }
 
-function isLocalHost(){
-    if (window.location.protocol == "file:"){
-        return true;
+function getMainUrlDomain(){
+    if (isLocalHost()){
+        return window.location.href;
     }
-
-    if (window.location.host == "" || window.location.hostname == ""){
-        return true;
+    else{
+        return "https://comfortexpress.ge";
     }
-
-    return false;
 }
