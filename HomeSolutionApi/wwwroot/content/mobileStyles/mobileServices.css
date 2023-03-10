@@ -15,7 +15,7 @@
 
 .text {
     border: 2px solid #ffce48;
-    font-size: 23px;
+    font-size: 144%;
     margin: -50px 10px 0px 10px;
     display: block;
     color: white;
@@ -34,7 +34,7 @@
 }
 .service-bottom-title {
     text-align: center;
-    margin-top: 14px;
+    margin-top: 4%;
     word-wrap: break-word;
     z-index: 2;
     position: relative;
