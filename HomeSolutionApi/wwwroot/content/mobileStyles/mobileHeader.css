@@ -91,6 +91,7 @@ html, body {
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    display: block;
 }
 
     #menu li {
@@ -138,4 +139,36 @@ html, body {
     background-color: #AbAbAb;
     height: 125px;
     width: 100%;
+}
+.selected-lang {
+    white-space: nowrap;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -100px;
+}
+
+.hypert {
+    display: inline-block;
+    font-size: 20px;
+    align-content: center;
+    font-family: 'Gill Sans MT', sans-serif;
+    cursor: pointer;
+    color: black;
+}
+
+#hypert-text {
+    text-decoration-line: none;
+    text-decoration-color: #000;
+}
+
+a:active {
+    color: #000000
+}
+
+a:link {
+    color: #000000
+}
+
+a:visited {
+    color: #000000
 }
