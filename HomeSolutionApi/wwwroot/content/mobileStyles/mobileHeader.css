@@ -97,6 +97,7 @@ html, body {
     #menu li {
         padding: 15px 0;
         font-size: 22px;
+        display: inline;
     }
 
 #menuToggle input:checked ~ ul {
@@ -142,9 +143,7 @@ html, body {
 }
 .selected-lang {
     white-space: nowrap;
-    position: absolute;
-    margin-top: 40px;
-    margin-left: -100px;
+    
 }
 
 .hypert {
