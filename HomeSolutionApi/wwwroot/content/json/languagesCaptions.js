@@ -57,6 +57,14 @@ var languageCaptions =
     }
   },
 
+   {
+    "key": "mobile.service.header.caption.1",
+    "value": {
+      "en": "Our Services",
+      "ge": "ჩვენი სერვისები"
+    }
+  },
+
   {
     "key": "service.page.title.caption.1",
     "value": {

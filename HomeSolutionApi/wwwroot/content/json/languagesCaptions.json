@@ -38,7 +38,7 @@
       "ge": "ჩვენს შესახებ"
     }
   },
-
+ 
   {
     "key": "about.page.title.caption",
     "value": {
@@ -54,6 +54,15 @@
       "ge": "გიორგი ბრწყინვალეს N22"
     }
   },
+
+  {
+    "key": "mobile.service.header.caption.1",
+    "value": {
+      "en": "Our Services",
+      "ge": "ჩვენი სერვისები"
+    }
+  },
+
 
   {
     "key": "service.page.title.caption.1",

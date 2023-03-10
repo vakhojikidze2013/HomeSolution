@@ -32,7 +32,7 @@
 .text:hover {
     background-color: #ffce48;
 }
-.service-bottom-text {
+.service-bottom-title {
     text-align: center;
     margin-top: 14px;
     word-wrap: break-word;
