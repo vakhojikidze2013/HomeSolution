@@ -91,11 +91,14 @@ html, body {
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    display: block;
+    z-index: 10;
 }
 
     #menu li {
         padding: 15px 0;
         font-size: 22px;
+        display: inline;
     }
 
 #menuToggle input:checked ~ ul {
@@ -114,7 +117,7 @@ html, body {
     
 }
 
-#number {
+.number {
     position: fixed;
     z-index: 40;
     font-family: 'Gill Sans MT', sans-serif;
@@ -122,14 +125,15 @@ html, body {
     border: thin;
     margin: 0;
     padding: 6px 0px 6px 0px;
-    text-shadow: 2.5px 3.5px 1px rgb(0 0 0 / 60%);
+    text-shadow: 2.5px 1.5px 1px rgb(0 0 0 / 60%);
     top: 1.5%;
     text-align: center;
     left: 57%;
     width: 42%;
+    
     background-color: #c6d043;
     color: white;
-    font-size: 4.5vw;
+    font-size: 144%;
     border-radius: 2vw;
 }
 
@@ -137,4 +141,34 @@ html, body {
     background-color: #AbAbAb;
     height: 125px;
     width: 100%;
+}
+.selected-lang {
+    white-space: nowrap;
+    
+}
+
+.hypert {
+    display: inline-block;
+    font-size: 20px;
+    align-content: center;
+    font-family: 'Gill Sans MT', sans-serif;
+    cursor: pointer;
+    color: black;
+}
+
+#hypert-text {
+    text-decoration-line: none;
+    text-decoration-color: #000;
+}
+
+a:active {
+    color: #000000
+}
+
+a:link {
+    color: #000000
+}
+
+a:visited {
+    color: #000000
 }

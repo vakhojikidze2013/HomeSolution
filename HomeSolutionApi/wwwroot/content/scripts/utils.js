@@ -10,6 +10,6 @@ function getMainUrlDomain(){
         return window.location.href;
     }
     else{
-        return "https://comfortexpress.ge";
+        return "https://comfortexpress.ge/";
     }
 }

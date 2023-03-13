@@ -15,17 +15,34 @@
                     <span></span>
                     <span></span>
                     <ul id="menu">
-                        <li id="font-color"><div id="nav.caption.1"></div></li>
-                        <li><div id="nav.caption.2"></div></li>
+                        <li id="font-color"><div id="nav.caption.1" onclick="location.reload();"></div></li>
                         <li><div id="nav.caption.3"></div></li>
-                        <li><div id="nav.caption.4"></div></li>
                         <li><div id="nav.caption.5"></div></li>
+                        <li>
+                            <div class="selected-lang">
+                                <p id="English" class="hypert" language="english">ENG</p>
+                                <p class="hypert">/</p>
+                                <p id="Georgian" class="hypert" language="georgian">ქარ</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </nav>
-            <img id="logo" src="../content/img/header-banner.png">
-            <a href="tel:+995595030328"><p id="number">+995 595 03 03 28</p></a>
+            <img id="logo" src="../content/img/header-banner.png" onclick="location.reload();">
+            <a href="tel:+995595030328"><p class="number">595 03 03 28</p></a>
         </div>
     </header>
+    <script>
+    // Add an onclick event to the "english" div to switch to English
+        document.getElementById("English").onclick = function () {
+            currentLanguage = "en";
+            getAllCaptionAndSet();
+        };
+
+        // Add an onclick event to the "georgian" div to switch to Georgian
+        document.getElementById("Georgian").onclick = function () {
+            currentLanguage = "ge";
+            getAllCaptionAndSet();
+        };</script>
 </body>
 </html>

@@ -57,10 +57,18 @@ var languageCaptions =
     }
   },
 
+   {
+    "key": "mobile.service.header.caption.1",
+    "value": {
+      "en": "Our Services",
+      "ge": "ჩვენი სერვისები"
+    }
+  },
+
   {
     "key": "service.page.title.caption.1",
     "value": {
-      "en": "Lawn Care Service",
+      "en": "Lawn Care ",
       "ge": "გაზონის მოვლა"
     }
   },
@@ -75,7 +83,7 @@ var languageCaptions =
   {
     "key": "service.page.title.caption.2",
     "value": {
-      "en": "Pool Cleaning Service",
+      "en": "Pool Cleaning ",
       "ge": "აუზის წმენდა"
     }
   },
@@ -125,7 +133,7 @@ var languageCaptions =
   {
     "key": "service.page.title.caption.5",
     "value": {
-      "en": "Lock Changing Services",
+      "en": "Lock Changing & Repair",
       "ge": "საკეტების შეკეთება"
     }
   },
@@ -142,7 +150,7 @@ var languageCaptions =
   {
     "key": "service.page.title.caption.6",
     "value": {
-      "en": "Conditioning Service",
+      "en": "Conditioning & Heating",
       "ge": "გათბობა - გაგრილება"
     }
   },
@@ -176,7 +184,7 @@ var languageCaptions =
   {
     "key": "service.page.title.caption.8",
     "value": {
-      "en": "Aquarium Cleaning Service",
+      "en": "Aquarium Cleaning",
       "ge": "აკვარიუმის მოვლა"
     }
   },
