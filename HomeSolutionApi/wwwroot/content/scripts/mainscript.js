@@ -26,6 +26,7 @@ function openAboutPage() {
     });
     headerAnimationIsActive = false;
     window.scrollTo(0, 0);
+    getAllCaptionWait()
 }
 
 function openHomePage() {
