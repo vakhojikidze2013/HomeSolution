@@ -1,12 +1,12 @@
 #cur-service-info{
     align-items: center;
-    margin-top: 15%;
 }
 
 .textHeader {
     text-align: center;
     font-size: 45px;
-    font-family: 'Lilita One', cursive;
+    text-transform: uppercase;
+    font-family: 'Lilita One',bpg_nino_elite_exp_caps, cursive;
 }
 
 #img1 {
@@ -17,7 +17,7 @@
 }
 
 .textCaptions {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Dosis',bpg_nino_elite_ultra, sans-serif;
     text-align: center;
     font-size: 25px;
     border: 2px solid #e0daa3;

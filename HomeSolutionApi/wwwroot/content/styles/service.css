@@ -10,9 +10,11 @@ html {
 .h2-services {
     text-align: center;
     font-size: 2vw;
-    font-family: Corbel;
-    /*font-weight: bold;*/
+    text-transform: uppercase;
+    font-family: bpg_nino_elite_exp_caps;
+    font-weight: bolder;
     font-optical-sizing: auto;
+    padding-top: 20px;
 }
 
 #service-container {
@@ -48,10 +50,18 @@ html {
     height: 335px;
     z-index: -1;
 }
-
+@font-face {
+    font-family: bpg_nino_elite_exp_caps;
+    src: url(/content/fonts/bpg_nino_elite_exp_caps.otf) format('truetype');
+}
+@font-face {
+    font-family: bpg_nino_elite_ultra;
+    src: url(/content/fonts/bpg_nino_elite_ultra.otf) format('truetype');
+}
 .text {
-    font-family: 'roboto', arial;
-    font-size: 14px;
+    font-family: bpg_nino_elite_exp_caps, arial;
+    font-size: 16px;
+    text-transform: uppercase;
     font-weight: 500;
     z-index: 10;
     position: relative;
@@ -65,6 +75,10 @@ html {
     padding-right: 60px;
     padding-bottom: 2px;
 }
+    .text:hover {
+        background-color: #edb942;
+    }
+
 
 .service-bottom-text {
     font-family: 'roboto', arial;
