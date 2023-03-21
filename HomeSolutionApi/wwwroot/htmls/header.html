@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../content/styles/header.css">
+    <link rel="stylesheet" href="/content/styles/galleryStyle.css" />
 </head>
 <body>
 <div id="header">
@@ -36,11 +37,51 @@
             </div>
         </div>
 
+        <div id="gallery_div_for_hover" class="dropdown">
+                <div class="dropdown-content">
+                    <div class="meny-img">
+
+                        <button onclick="openGalleryPage()">
+                            <img src="/content/img/auzi.jpg" alt="">
+                            <h4>შესრულებული სამუშაო</h4>
+                        </button>
+
+                    </div>
+
+                    <div class="meny-img">
+
+                        <button onclick="show()">
+                            <img src="/content/img/auzi.jpg" alt="">
+                            <h4>შესრულებული სამუშაო</h4>
+                        </button>
+
+                    </div>
+
+                    <div class="meny-img">
+
+                        <button onclick="desc111Button()">
+                            <img src="/content/img/auzi.jpg" alt="">
+                            <h4>შესრულებული სამუშაო</h4>
+                        </button>
+
+                    </div>
+
+                    <div class="meny-img">
+
+                        <button onclick="showOrHide()">
+                            <img src="/content/img/auzi.jpg" alt="">
+                            <h4>შესრულებული სამუშაო</h4>
+                        </button>
+
+                    </div>
+
+                </div>
+        </div>
 
     </div>
 </div>
     <script>
-    // Add an onclick event to the "english" div to switch to English
+        // Add an onclick event to the "english" div to switch to English
         document.getElementById("English").onclick = function () {
             currentLanguage = "en";
             getAllCaptionAndSet();
@@ -50,6 +91,32 @@
         document.getElementById("Georgian").onclick = function () {
             currentLanguage = "ge";
             getAllCaptionAndSet();
-        };</script>
+        };
+        
+        // gallery hover js
+        
+            const nav3 = document.getElementById("nav3");
+            const galleryDiv = document.getElementById("gallery_div_for_hover");
+            console.log(nav3);
+            console.log(galleryDiv);
+
+            nav3.addEventListener("mouseover", () => {
+                galleryDiv.style.display = "flex";
+            });
+
+            galleryDiv.addEventListener("mouseleave", () => {
+                galleryDiv.style.display = "none";
+            });
+
+            galleryDiv.addEventListener("mouseover", () => {
+                galleryDiv.style.display = "flex";
+            });
+
+            galleryDiv.addEventListener("mouseleave", () => {
+                galleryDiv.style.display = "none";
+            });
+        
+
+    </script>
 </body>
 </html>

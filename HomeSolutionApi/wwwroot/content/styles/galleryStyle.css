@@ -1,20 +1,27 @@
 
 .dropdown {
 	position: relative;
+	position: absolute;
+	top: 10vw;
+	left: 15%;
+	display: inline-block;
 	display: inline-block;
 }
 
+#gallery_div_for_hover {
+	display: none;
+}
 
-	.dropdown button.dropbtn {
-		background-color: none;
-		color: #333;
-		padding: 1px;
-		font-size: 16px;
-		border: none;
-		cursor: pointer;
-		display: flex;
-		align-items: center;
-	}
+.dropdown button.dropbtn {
+	background-color: none;
+	color: #333;
+	padding: 1px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
 
 		.dropdown button.dropbtn:hover {
 			background-color: none;
@@ -23,7 +30,7 @@
 
 
 .dropdown-content {
-	display: none;
+	display: flex;
 	position: relative;
 	z-index: 1;
 	background-color: #fff;
@@ -46,10 +53,6 @@
 			background-color: #f2f2f2;
 		}
 
-
-.dropdown:hover .dropdown-content {
-	display: flex;
-}
 
 .dropdown-content img {
 	width: 340px;
