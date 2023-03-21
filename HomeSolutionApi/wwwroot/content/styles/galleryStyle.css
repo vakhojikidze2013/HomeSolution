@@ -1,0 +1,132 @@
+
+.dropdown {
+	position: relative;
+	position: absolute;
+	top: 10vw;
+	left: 15%;
+	display: inline-block;
+	display: inline-block;
+}
+
+#gallery_div_for_hover {
+	display: none;
+}
+
+.dropdown button.dropbtn {
+	background-color: none;
+	color: #333;
+	padding: 1px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+		.dropdown button.dropbtn:hover {
+			background-color: none;
+			color: rgb(227, 141, 13);
+		}
+
+
+.dropdown-content {
+	display: flex;
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
+	box-shadow: 0px 8px 16px 2px rgba(0, 0, 0, 0.2);
+	padding: 10px;
+	margin-top: 5px;
+}
+
+
+	.dropdown-content a {
+		color: rgb(0, 0, 0);
+		text-decoration: none;
+		display: inline-block;
+		align-items: center;
+		margin-bottom: 5px;
+	}
+
+
+		.dropdown-content a:hover {
+			background-color: #f2f2f2;
+		}
+
+
+.dropdown-content img {
+	width: 340px;
+	border-radius: 10px;
+}
+
+	.dropdown-content img:hover {
+		width: 360px;
+	}
+
+.meny-img {
+	padding: 2px;
+}
+
+	.meny-img h4 {
+		text-align: center;
+		font-size: 20px;
+	}
+
+		.meny-img h4:hover {
+			color: rgb(2, 3, 0);
+		}
+
+
+
+
+.gallarCild {
+	background-color: #fff;
+	padding: 100px;
+	margin-left: 200px;
+}
+
+	.gallarCild img {
+		width: 43%;
+		height: 43%;
+		padding: 0px;
+		margin: 0px;
+	}
+
+.gallarCild {
+	width: 90%;
+	margin: auto;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+}
+
+	.gallarCild img {
+		position: relative;
+		height: 350px;
+		width: 24%;
+		border-radius: 20px;
+	}
+
+#pothoHiden {
+	display: none;
+}
+
+#pothoHiden2 {
+	display: none;
+}
+
+#pothoHiden3 {
+	display: none;
+}
+
+#pothoHiden4 {
+	display: none;
+}
+
+
+button {
+	background: none;
+	border: none;
+	font-family: "monospace", sans-serif;
+	text-transform: uppercase;
+	cursor: pointer;
+}
