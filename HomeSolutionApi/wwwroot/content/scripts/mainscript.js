@@ -83,12 +83,14 @@ function openMobileServices(x) {
             $("#main-service-load-container").load("/htmls/service-htmls/lawn-care-service.html");
             break;
         case 1:
-            $("mobileServices-load-container").html("");
-            $("#mobileServices-load-container").load("htmls/service-htmls/pool-cleaning-service.html");
+            loadPageWithCaption(
+                "#mobileServices-load-container", 
+                "htmls/service-htmls/pool-cleaning-service.html");
             break;
         case 2:
-            $("mobileServices-load-container").html("");
-            $("#mobileServices-load-container").load("htmls/service-htmls/plumbing-service.html");
+            loadPageWithCaption(
+                "#mobileServices-load-container", 
+                "htmls/service-htmls/plumbing-service.html");
             break;
         case 3:
             $("mobileServices-load-container").html("");
@@ -105,17 +107,20 @@ function openMobileServices(x) {
         case 6:
             $("mobileServices-load-container").html("");
             $("#mobileServices-load-container").load("htmls/service-htmls/universal-services.html");
+            
             break;
         case 7:
             $("mobileServices-load-container").html("");
-            $("#mobileServices-load-container").load("htmls/service-htmls/aquarium-cleaning-service.html");
+
+            $("#mobileServices-load-container")
+            .load("htmls/service-htmls/aquarium-cleaning-service.html", function() {
+                    getAllCaptionAndSet();
+                });
+            
             break;
 
-
     }
-    getAllCaptionWait()
 }
-
 
 function openGalleryPage() {
     $("#main-service-load-container").html("");
@@ -136,9 +141,6 @@ function openScrollAnim() {
     });
 }
 
-
-var jsonUrl = `${getMainUrlDomain()}content/json/languagesCaptions.json`;
-console.log(jsonUrl);
 $(document).ready(function () {
     // An array of HTML files to load
     var htmlFiles = [
@@ -152,36 +154,24 @@ $(document).ready(function () {
         "htmls/mobileMain.html",
         "htmls/mobileServices.html",
         "htmls/lawn-care-service.html"];
-
-    getAllCaptionWait()
-
 });
 
 
 // Define a variable to store the current language
 let currentLanguage = "en";
 
-function getAllCaptionWait() {
-    setTimeout(getAllCaptionAndSet, 500);
-}
+// function getAllCaptionWait() {
+//     setTimeout(getAllCaptionAndSet, 1499);
+// }
 
-function getAllCaptionAndSet() {
-    $.getJSON(jsonUrl, function (result) {
+// window.addEventListener("DOMContentLoaded", () => {
+//     // Your code here
+//     getAllCaptionAndSet();
+//   });
 
-        $.each(result, function (i, field) {
-            //console.log(i, field);
-            //stringed JSON
-            const myJSON = JSON.stringify(field);
-            //parsed JSON object
-            const contentObj = JSON.parse(myJSON);
-            //console.log(field.key, field.value["en"]);
-
-            let currentElement = document.getElementById(field.key);
-            if (currentElement != null) {
-
-                currentElement.innerHTML = field.value[currentLanguage]
-            }
-
-        });
-    });
-}
+// var captionsSetInterval = setInterval(() => {
+//     if (isPageLoaded){
+//         getAllCaptionAndSet();
+//         isPageLoaded = false;
+//     }
+// }, 200);

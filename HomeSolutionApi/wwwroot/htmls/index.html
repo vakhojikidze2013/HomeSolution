@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
     <title>ComfortExpress</title>
 
+    <script src="content/scripts/lib/jquery-3.6.1.js"></script>
+
     <script src="content/scripts/utils.js"></script>
     <script src="content/scripts/constants.js"></script>
-    <script src="content/scripts/lib/jquery-3.6.1.js"></script>
     <script src="../content/scripts/screensizeDetector.js"></script>
     <script src="content/scripts/headerAnimation.js"></script>
     <script src="content/scripts/headerJs.js"></script>
@@ -32,12 +33,13 @@
 
         if (window.innerWidth < 550) {
 
-            $('#mm').load('htmls/mobileMain.html');
-
+            //$('#mm').load('htmls/mobileMain.html');
+            loadPageWithCaption("#mm", "htmls/mobileMain.html");
 
         }
         else {
-            $("#dm").load("/htmls/desktopMain.html");
+            //$("#dm").load("/htmls/desktopMain.html");
+            loadPageWithCaption("#dm", "/htmls/desktopMain.html");
         }
     </script>
 
