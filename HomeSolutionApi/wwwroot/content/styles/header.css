@@ -42,7 +42,8 @@
 
 #number {
     color: white;
-    font-family: 'Gill Sans MT', sans-serif;
+    text-transform: uppercase;
+    font-family: 'Gill Sans MT',bpg_nino_elite_exp_caps, sans-serif;
     font-weight: 700;
     font-size: 40px;
     border: thin;
@@ -73,19 +74,23 @@
 
     .navigation-ul > li {
         display: inline-block;
-        font-family: 'Gill Sans MT', sans-serif;
+        text-transform: uppercase;
+        font-family: 'Gill Sans MT',bpg_nino_elite_exp_caps, sans-serif;
         font-size: 20px;
         font-weight: 500;
         padding: 9px 22px;
         margin-top: 11px;
     }
+        .navigation-ul > li:hover {
+            background-color: rgb(238 184 35 / 90%);
+        }
 
-#gallery-section {
-    width: 70vw;
-    height: 35vw;
-    background-color: #efefef;
-    margin-left: 20vw;
-}
+        #gallery-section {
+            width: 70vw;
+            height: 35vw;
+            background-color: #efefef;
+            margin-left: 20vw;
+        }
 
 .gallery-folders {
     display: flex;
@@ -123,7 +128,7 @@
 .selected-lang {
     white-space: nowrap;
     position: absolute;
-    right: 3px;
+    right: 2vw;
 
 }
 
@@ -131,10 +136,13 @@
     display: inline-block;
     font-size: 20px;
     align-content: center;
-    font-family: 'Gill Sans MT', sans-serif;
-    cursor:pointer;
+    text-transform: uppercase;
+    font-family: 'Gill Sans MT',bpg_nino_elite_exp_caps, sans-serif;
+    cursor: pointer;
 }
-
+    .hypert:hover {
+        color: rgb(238 184 35 / 90%);
+    }
 #hypert-text {
     text-decoration-line: none;
     text-decoration-color: #000;
