@@ -126,7 +126,15 @@ function openGalleryPage() {
         $("#main-service-load-container").load("htmls/gallerySlider.html");
     });
 }
-
+function openScrollAnim() {
+    $("#main-service-load-container").html("");
+    $("#banner_cover").html("");
+    window.stop("#banner_cover");
+    $("#slider-service-load-container").html("");
+    $(function () {
+        $("#main-service-load-container").load("htmls/mobileScrollAnim.html");
+    });
+}
 
 
 var jsonUrl = `${getMainUrlDomain()}content/json/languagesCaptions.json`;

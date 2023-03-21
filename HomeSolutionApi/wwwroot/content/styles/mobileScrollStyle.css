@@ -1,5 +1,5 @@
 body {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     background-color: gold;
     margin: 0rem;
@@ -9,9 +9,10 @@ body {
 #image-track {
     display: flex;
     gap: 4vmin;
-    position: absolute;
+    position: relative;
     left: 50%;
-    top: 50%;
+
+    margin-top: 30%;
     transform: translate(0%, -50%);
     user-select: none; /* -- Prevent image highlighting -- */
 }

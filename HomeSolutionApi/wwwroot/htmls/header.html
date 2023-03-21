@@ -42,17 +42,17 @@
                     <div class="meny-img">
 
                         <button onclick="openGalleryPage()">
-                            <img src="/content/img/auzi.jpg" alt="">
-                            <h4>შესრულებული სამუშაო</h4>
+                            <img src="/content/img/galleryslider/BefAf.jpg" alt="">
+                            <h4>before-after</h4>
                         </button>
 
                     </div>
 
                     <div class="meny-img">
 
-                        <button onclick="show()">
+                        <button onclick="openScrollAnim()">
                             <img src="/content/img/auzi.jpg" alt="">
-                            <h4>შესრულებული სამუშაო</h4>
+                            <h4>scroll slider</h4>
                         </button>
 
                     </div>
@@ -97,8 +97,7 @@
         
             const nav3 = document.getElementById("nav3");
             const galleryDiv = document.getElementById("gallery_div_for_hover");
-            console.log(nav3);
-            console.log(galleryDiv);
+
 
             nav3.addEventListener("mouseover", () => {
                 galleryDiv.style.display = "flex";
