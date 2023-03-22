@@ -28,12 +28,12 @@ function getAllCaptionAndSet(path) {
     });
 }
 
-function emptyHtml(container){
-    $(container).html("");
+function emptyHtml(container,otherCont){
+    $(container, otherCont).html("");
 }
 
-function loadPageWithCaption(container, path){
-    emptyHtml(container);
+function loadPageWithCaption(container, path, otherCont){
+    emptyHtml(container, otherCont);
 
     $(container)
     .load(path, function() {
