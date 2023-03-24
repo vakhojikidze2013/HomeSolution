@@ -38,7 +38,7 @@
       "ge": "ჩვენს შესახებ"
     }
   },
- 
+
   {
     "key": "about.page.title.caption",
     "value": {
@@ -251,5 +251,38 @@
       "en": "Our quality workmanship is guaranteed",
       "ge": "ჩვენი ხარისხიანი თანამშრომლობა გარანტირებულია"
     }
+  },
+
+  {
+    "key": "gallery.slider.caption.1",
+    "value": {
+      "en": "Before-After",
+      "ge": "მანამდე და შემდეგ"
+    }
+  },
+
+  {
+    "key": "gallery.slider.caption.2",
+    "value": {
+      "en": "Photo Gallery",
+      "ge": "ფოტო გალერეა"
+    }
+  },
+
+  {
+    "key": "gallery.slider.caption.3",
+    "value": {
+      "en": "Costumers",
+      "ge": "მუდმივი მომხმარებლები"
+    }
+  },
+
+  {
+    "key": "gallery.slider.caption.4",
+    "value": {
+      "en": "Video Gallery",
+      "ge": "ვიდეოთეკა"
+    }
   }
+
 ]
