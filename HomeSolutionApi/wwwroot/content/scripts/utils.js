@@ -32,11 +32,15 @@ function emptyHtml(container,otherCont){
     $(container, otherCont).html("");
 }
 
-function loadPageWithCaption(container, path, otherCont){
+function loadPageWithCaption(container, path, otherCont ){
     emptyHtml(container, otherCont);
 
     $(container)
     .load(path, function() {
             getAllCaptionAndSet(path);
         });
+}
+function scrollToServiceInfo() {
+    const serviceInfoId = document.getElementById("default-service-info");
+    serviceInfoId.scrollIntoView();
 }
