@@ -213,3 +213,12 @@ var currentLanguage = "en";
 //         isPageLoaded = false;
 //     }
 // }, 200);
+
+function scrollAnimation() {
+
+    $('html, body').animate({
+        scrollTop: $("#slider-service-load-container").offset().top
+    }, 1000);
+
+
+}
