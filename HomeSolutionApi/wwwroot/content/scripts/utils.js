@@ -40,7 +40,20 @@ function loadPageWithCaption(container, path, otherCont ){
             getAllCaptionAndSet(path);
         });
 }
-function scrollToServiceInfo() {
-    const serviceInfoId = document.getElementById("default-service-info");
-    serviceInfoId.scrollIntoView();
+//function scrollToServiceInfo() {
+//    const serviceInfoId = document.getElementById("default-service-info");
+//    //setTimeout(5000);
+//    //location.reload();
+//    serviceInfoId.scrollIntoView();
+  
+   
+//}
+
+function scrollAnimation() {
+ 
+        $('html, body').animate({
+            scrollTop: $("#slider-service-load-container").offset().top
+        }, 2000);
+       
+   
 }
