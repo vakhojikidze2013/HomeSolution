@@ -130,8 +130,7 @@ html, body {
     text-align: center;
     left: 57%;
     width: 42%;
-    
-    background-color: #c6d043;
+    background-color: rgb(238 184 35 / 90%);
     color: white;
     font-size: 144%;
     border-radius: 2vw;
