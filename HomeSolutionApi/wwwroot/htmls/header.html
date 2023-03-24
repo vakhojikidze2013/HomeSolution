@@ -97,7 +97,8 @@
         
             const nav3 = document.getElementById("nav3");
             const galleryDiv = document.getElementById("gallery_div_for_hover");
-
+            const header = document.getElementById("header");       
+        
 
             nav3.addEventListener("mouseover", () => {
                 galleryDiv.style.display = "flex";
@@ -112,6 +113,10 @@
             });
 
             galleryDiv.addEventListener("mouseleave", () => {
+                galleryDiv.style.display = "none";
+            });
+
+            header.addEventListener("mouseleave", () => {
                 galleryDiv.style.display = "none";
             });
         
