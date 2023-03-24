@@ -49,11 +49,3 @@ function loadPageWithCaption(container, path, otherCont ){
    
 //}
 
-function scrollAnimation() {
- 
-        $('html, body').animate({
-            scrollTop: $("#slider-service-load-container").offset().top
-        }, 2000);
-       
-   
-}
