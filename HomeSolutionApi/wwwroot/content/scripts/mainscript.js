@@ -162,12 +162,12 @@ function openGalleryPage() {
         "#slider-service-load-container");
 
 }
-//function openMobileGalleryPage() {
-//    loadPageWithCaption(
-//        "#mobileServices-load-container",
-//        "htmls/mobileScrollAnim.html");
+function openMobileGalleryPage() {
+    loadPageWithCaption(
+        "#mobileServices-load-container",
+        "htmls/mobileScrollAnim.html");
 
-//}
+}
 
 function openScrollAnim() {
     $("#banner_cover").html("");
