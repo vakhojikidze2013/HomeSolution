@@ -162,12 +162,12 @@ function openGalleryPage() {
         "#slider-service-load-container");
 
 }
-//function openMobileGalleryPage() {
-//    loadPageWithCaption(
-//        "#mobileServices-load-container",
-//        "htmls/mobileScrollAnim.html");
+function openMobileGalleryPage() {
+    loadPageWithCaption(
+        "#mobileServices-load-container",
+        "htmls/mobileScrollAnim.html");
 
-//}
+}
 
 function openScrollAnim() {
     $("#banner_cover").html("");
@@ -216,9 +216,14 @@ var currentLanguage = "en";
 
 function scrollAnimation() {
 
-    $('html, body').animate({
-        scrollTop: $("#slider-service-load-container").offset().top
-    }, 1000);
-
-
+    $("dm").html("");
+    loadPageWithCaption("#dm", "/htmls/desktopMain.html", null, function () {
+        setTimeout(() =>
+        {
+            $('html, body').animate({
+                scrollTop: $("#slider-service-load-container").offset().top
+            }, 1000);
+            
+        }, 250)
+    });
 }
