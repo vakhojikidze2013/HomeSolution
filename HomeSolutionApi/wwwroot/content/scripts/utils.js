@@ -22,8 +22,14 @@ function getAllCaptionAndSet(path) {
             if (currentElement != null) {
 
                 currentElement.innerHTML = field.value[currentLanguage]
-            }
 
+                const mychosenlang = {currentLanguage};
+                localStorage.setItem("localLang","getAllCaptionAndSet(path)")
+
+
+                let chosenlangtext = localStorage.getItem("Locallang");
+                document.getElementsByClassName("about.page.list")
+            }
         });
     });
 }
@@ -32,20 +38,27 @@ function emptyHtml(container,otherCont){
     $(container, otherCont).html("");
 }
 
-function loadPageWithCaption(container, path, otherCont ){
+async function loadPageWithCaption(container, path, otherCont, customFunction){
     emptyHtml(container, otherCont);
 
     $(container)
-    .load(path, function() {
-            getAllCaptionAndSet(path);
-        });
+    .load(path, async function() {
+        getAllCaptionAndSet(path);
+        if (customFunction != null || customFunction != undefined) {
+            customFunction();
+        }
+    });
 }
-//function scrollToServiceInfo() {
-//    const serviceInfoId = document.getElementById("default-service-info");
-//    //setTimeout(5000);
-//    //location.reload();
-//    serviceInfoId.scrollIntoView();
-  
-   
+
+//function saveCurrentLanguage() {
+
+//    var isGeoclicked = false;
+
+//    if (!isGeoclicked) {
+
+//        localStorage.setItem ("lang","lang")
+//    }
+
+
 //}
 
