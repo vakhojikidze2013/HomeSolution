@@ -1,0 +1,1 @@
+const hamburgerMenu = document.getElementById('header-con');

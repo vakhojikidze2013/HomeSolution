@@ -40,6 +40,16 @@ function loadPageWithCaption(container, path, otherCont ){
             getAllCaptionAndSet(path);
         });
 }
+
+
+function getLocalStorage(param) {
+    var item = localStorage.getItem(param);
+    return item;
+}
+
+function setLocalStorage(key, value) {
+    localStorage.setItem(key, value);
+}
 //function scrollToServiceInfo() {
 //    const serviceInfoId = document.getElementById("default-service-info");
 //    //setTimeout(5000);
