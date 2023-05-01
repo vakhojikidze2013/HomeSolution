@@ -206,7 +206,7 @@ var currentLanguage = "en";
 //     // Your code here
 //     getAllCaptionAndSet();
 //   });
-
+//adasdad
 // var captionsSetInterval = setInterval(() => {
 //     if (isPageLoaded){
 //         getAllCaptionAndSet();
