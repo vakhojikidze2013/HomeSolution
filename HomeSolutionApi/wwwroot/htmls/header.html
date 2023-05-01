@@ -85,6 +85,10 @@
         document.getElementById("English").onclick = function () {
             currentLanguage = "en";
             getAllCaptionAndSet();
+            var item = getLocalStorage(LANGUAGECODELOCALSTORAGEKEY)
+            if (item == null) {
+                setLocalStorage(LANGUAGECODELOCALSTORAGEKEY, currentLanguage);
+            }
         };
 
         // Add an onclick event to the "georgian" div to switch to Georgian
