@@ -214,16 +214,30 @@ var currentLanguage = "en";
 //     }
 // }, 200);
 
-function scrollAnimation() {
+//function scrollAnimation() {
 
-    $("dm").html("");
-    loadPageWithCaption("#dm", "/htmls/desktopMain.html", null, function () {
-        setTimeout(() =>
-        {
-            $('html, body').animate({
-                scrollTop: $("#slider-service-load-container").offset().top
-            }, 1000);
-            
-        }, 250)
-    });
+//    $("#dm").html("");
+//    loadPageWithCaption("#dm", "/htmls/desktopMain.html", null, function () {
+//        setTimeout(() => {
+//            $('html, body').animate({
+//                scrollTop: $("#slider-service-load-container").offset().top
+//            }, 500);
+
+//        }, 250)
+//    });
+//}
+
+function scrollAnimation() {
+    // Store flag in sessionStorage
+    sessionStorage.setItem('shouldScroll', true);
+
+    // Reload the page
+    location.reload();
 }
+
+window.onload = function () {
+    if (sessionStorage.getItem('shouldScroll')) {
+        $('html, body').animate({ scrollTop: $('#slider-service-load-container').offset().top }, 'slow');
+        sessionStorage.removeItem('shouldScroll');
+    }
+};
