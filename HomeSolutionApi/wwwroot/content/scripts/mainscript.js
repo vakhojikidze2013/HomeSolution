@@ -218,12 +218,11 @@ function scrollAnimation() {
 
     $("dm").html("");
     loadPageWithCaption("#dm", "/htmls/desktopMain.html", null, function () {
-        setTimeout(() =>
-        {
+        setTimeout(() => {
             $('html, body').animate({
                 scrollTop: $("#slider-service-load-container").offset().top
             }, 1000);
-            
+
         }, 250)
     });
 }
