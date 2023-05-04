@@ -256,4 +256,14 @@ window.onload = function () {
 //        location.reload();    }
 //});
 
+function changeLogoIfDarkMode() {
 
+    var mobileLogo = `<img id="logo" src="../content/img/header-banner.png" onclick="location.reload();">`
+    var mobileLogoDark = `<img id="logo" src="../content/img/header-banner.png" onclick="location.reload();">`
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    
+} else {
+    // User prefers light mode
+    console.log('User prefers light mode');
+}
+}
