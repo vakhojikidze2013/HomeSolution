@@ -241,3 +241,17 @@ window.onload = function () {
         sessionStorage.removeItem('shouldScroll');
     }
 };
+
+var backButtonCount = 0;
+window.addEventListener('pageshow', function (event) {
+    
+    if (event.persisted && (window.performance
+        && window.performance.navigation.type === 2)) {
+     
+        backButtonCount++;
+    }
+    if (backButtonCount > 1) {
+        window.history.go(-backButtonCount);
+    } else {
+        location.reload();    }
+});
