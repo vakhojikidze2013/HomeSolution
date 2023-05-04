@@ -64,6 +64,8 @@ footer {
     height: 68px;
     border-top: none;
     border-bottom: none;
+    font-family: 'Gill Sans MT',bpg_nino_elite_exp_caps, sans-serif;
+    font-size: 20px;
 }
 
 .footerFB {
@@ -75,10 +77,11 @@ footer {
 }
 
 .footer-sec-item3 {
-    padding-top: 10px;
+    padding-top: 13px;
 }
 
 .bottom-text {
-    font-size: 17px;
+    font-family: 'Gill Sans MT',bpg_nino_elite_exp_caps, sans-serif;
+    font-size: 20px;
     text-align: center;
 }

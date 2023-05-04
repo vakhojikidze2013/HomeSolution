@@ -1,30 +1,27 @@
 var isMainPage = true;
-
+var apperance = 0;
 
 
 function openAboutPage() {
+
+    closeAboutPage();
+    console.log(apperance);
+    loadPageWithCaption(
+        "#about-load-containter",
+        "htmls/About.html");
+
+    apperance++;
+    
     //$("#banner_cover").html("");
     //loadPageWithCaption(
-    //    "#main-service-load-container",
-    //    "htmls/About.html");
-    //loadPageWithCaption(
     //    "#slider-service-load-container");
-
-    
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            alert(this.responseText);
-        }
-    };
-    xhttp.open("GET", "about.html", true);
-    xhttp.send();
-    
-
-
-    headerAnimationIsActive = false;
-    window.scrollTo(0, 0); 
+    //headerAnimationIsActive = false;
+    //window.scrollTo(0, 0); 
 }
+function closeAboutPage() {
+if (apperance >= 1) location.reload();
+}
+
 function openMobileAboutPage() {
 
     loadPageWithCaption(
