@@ -6,6 +6,8 @@ var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
+    
+    animateSlider(".mySlides");
     showDivs(slideIndex += n);
 }
 
@@ -42,4 +44,7 @@ function showDivs(n) {
     catch{
 
     }
+}
+function animateSlider(sliderId) {
+    $(sliderId).animate({height:"toggle"}, 500,);
 }

@@ -1,17 +1,26 @@
 ﻿#about {
-    margin-top: 13vw;
     text-align: center;
     padding: 0px;
     border: 2px solid;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-bottom: 5vw;
+    margin-left: 27%;
+    margin-right: 27%;
     background-color: rgb(226, 226, 226);
 }
+#about-load-containter {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height:100%;
+    top: 180px;
+}
+#aboutBackground {
+    width: 100%;
+    height: 200%;
+    background-color: #0000004d;
+}
 .about_text {
-    
-    
-    
     font-size: 20px;
 }
 h1 {
@@ -21,7 +30,7 @@ h1 {
 }
 
 ul {
-    margin-top: 5vw
+    margin-top: 3vw;
 }
 #about ul li {
     background-color: #dad3ff94;

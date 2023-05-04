@@ -1,18 +1,27 @@
 var isMainPage = true;
-
+var apperance = 0;
 
 
 function openAboutPage() {
-    $("#banner_cover").html("");
-    loadPageWithCaption(
-        "#main-service-load-container",
-        "htmls/About.html");
-    loadPageWithCaption(
-        "#slider-service-load-container");
 
-    headerAnimationIsActive = false;
-    window.scrollTo(0, 0); 
+    closeAboutPage();
+    console.log(apperance);
+    loadPageWithCaption(
+        "#about-load-containter",
+        "htmls/About.html");
+
+    apperance++;
+    
+    //$("#banner_cover").html("");
+    //loadPageWithCaption(
+    //    "#slider-service-load-container");
+    //headerAnimationIsActive = false;
+    //window.scrollTo(0, 0); 
 }
+function closeAboutPage() {
+if (apperance >= 1) location.reload();
+}
+
 function openMobileAboutPage() {
 
     loadPageWithCaption(
