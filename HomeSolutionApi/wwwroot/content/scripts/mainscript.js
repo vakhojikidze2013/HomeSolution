@@ -3,12 +3,24 @@ var isMainPage = true;
 
 
 function openAboutPage() {
-    $("#banner_cover").html("");
-    loadPageWithCaption(
-        "#main-service-load-container",
-        "htmls/About.html");
-    loadPageWithCaption(
-        "#slider-service-load-container");
+    //$("#banner_cover").html("");
+    //loadPageWithCaption(
+    //    "#main-service-load-container",
+    //    "htmls/About.html");
+    //loadPageWithCaption(
+    //    "#slider-service-load-container");
+
+    
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            alert(this.responseText);
+        }
+    };
+    xhttp.open("GET", "about.html", true);
+    xhttp.send();
+    
+
 
     headerAnimationIsActive = false;
     window.scrollTo(0, 0); 
@@ -235,9 +247,9 @@ function scrollAnimation() {
     location.reload();
 }
 
-window.onload = function () {
-    if (sessionStorage.getItem('shouldScroll')) {
-        $('html, body').animate({ scrollTop: $('#slider-service-load-container').offset().top }, 'slow');
-        sessionStorage.removeItem('shouldScroll');
-    }
-};
+//window.onload = function () {
+//    if (sessionStorage.getItem('shouldScroll')) {
+//        $('html, body').animate({ scrollTop: $('#slider-service-load-container').offset().top }, 'slow');
+//        sessionStorage.removeItem('shouldScroll');
+//    }
+//};
