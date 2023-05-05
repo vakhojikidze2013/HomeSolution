@@ -1,9 +1,10 @@
 .mySlides {
-    display: none
+    display: none;
 }
 
 .w3-left, .w3-right, .w3-badge {
-    cursor: pointer
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 .w3-badge {
