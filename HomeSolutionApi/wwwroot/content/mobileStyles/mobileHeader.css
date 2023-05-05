@@ -3,10 +3,13 @@ html, body {
     padding: 0;
     overflow-x: hidden;
 }
+header {
+    height: 170px;
+}
 #hamburger-menu-btn {
     display: block;
     position: fixed;
-    top: 100px;
+    top: 70px;
     left: 10px;
     z-index: 9999;
     width: 40px;
@@ -25,31 +28,39 @@ html, body {
         transform: rotate(90deg);
     }
 
+
 #menu {
+    list-style-type: none;
+    align-items: center;
     position: fixed;
     top: 70px;
-    left: -200px;
-    width: 200px;
-    height: 200px;
+    left: -300px;
+    width: 100px;
+    height: 100px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     transition: left 0.3s ease-in-out;
+    margin-top: 40px;
 }
 
     #menu.show {
         left: 0;
+        margin-top: 40px;
     }
 
     #menu ul {
         list-style: none;
         margin: 0;
         padding: 0;
+
     }
 
     #menu li {
         margin: 0;
+        margin-top: 5px;
         padding: 10px 0;
-        border-bottom: 1px solid #ddd;
+        /*border-bottom: 1px solid #ddd;*/
+
     }
 
         #menu li:last-child {
@@ -61,16 +72,17 @@ html, body {
         padding: 0 20px;
         color: #333;
         text-decoration: none;
-        font-size: 16px;
         line-height: 40px;
+
     }
 
 
 #logo {
-    width: 110%;
-    height: 90%;
-    margin-left: -25px;
-    margin-top: -10px;
+    position: relative;
+    width: 120%;
+    height: 120px;
+    margin-left: -40px;
+    top: -127px;
     
 }
 
@@ -102,6 +114,7 @@ html, body {
     white-space: nowrap;
     position: absolute;
     right: 3vw;
+    top: 120px;
     
 }
 

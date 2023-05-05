@@ -9,18 +9,10 @@
     <header>
         <div class="header-con">
             <button id="hamburger-menu-btn">☰</button>
-            <div id="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
             <ul id="menu">
-                <li id="font-color"><div id="nav.caption.1" onclick="location.reload();"></div></li>
-                <li onclick="openMobileGalleryPage()"><div id="nav.caption.3"></div></li>
-                <li onclick="openMobileAboutPage()"><div id="nav.caption.5"></div></li>
-
+                <li id="font-color"><div id="nav.caption.1" onclick="location.reload();">Home</div></li>
+                <!--<li onclick="openMobileGalleryPage()"><div id="nav.caption.3"></div></li>-->
+                <li onclick="openMobileAboutPage()"><div id="nav.caption.5">About</div></li>
             </ul>
         </div>  
             <img id="logo" src="../content/img/header-banner.png" onclick="location.reload();">
@@ -30,7 +22,6 @@
                 <p class="hypert">/</p>
                 <p id="Georgian" class="hypert" language="georgian">ქარ</p>
             </div>
-        </div>
     </header>
     <script>
         // Add an onclick event to the "english" div to switch to English
@@ -62,102 +53,3 @@
     </script>
 </body>
 </html>
-
-
-
-<!--<!DOCTYPE html>
-<html>
-<head>
-    <title>Hamburger Menu</title>
-    <style>
-        #hamburger-menu-btn {
-            display: block;
-            position: fixed;
-            top: 100px;
-            left: 10px;
-            z-index: 9999;
-            width: 40px;
-            height: 40px;
-            border: none;
-            background-color: transparent;
-            color: #000;
-            font-size: 24px;
-            line-height: 40px;
-            text-align: center;
-            cursor: pointer;
-            transition: transform 0.3s ease-in-out;
-        }
-
-            #hamburger-menu-btn.open {
-                transform: rotate(90deg);
-            }
-
-        #menu {
-            position: fixed;
-            top: 70px;
-            left: -200px;
-            width: 200px;
-            height: 200px;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-            transition: left 0.3s ease-in-out;
-        }
-
-            #menu.show {
-                left: 0;
-            }
-
-            #menu ul {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-            }
-
-            #menu li {
-                margin: 0;
-                padding: 10px 0;
-                border-bottom: 1px solid #ddd;
-            }
-
-                #menu li:last-child {
-                    border-bottom: none;
-                }
-
-            #menu a {
-                display: block;
-                padding: 0 20px;
-                color: #333;
-                text-decoration: none;
-                font-size: 16px;
-                line-height: 40px;
-            }
-    </style>
-</head>
-<body>
-    <button id="hamburger-menu-btn">☰</button>
-    <div id="menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-
-    <script>
-        const hamburgerMenuBtn = document.getElementById("hamburger-menu-btn");
-        const menu = document.getElementById("menu");
-
-        hamburgerMenuBtn.addEventListener("click", () => {
-            hamburgerMenuBtn.classList.toggle("open");
-            menu.classList.toggle("show");
-        });
-
-        document.addEventListener("click", (event) => {
-            if (!menu.contains(event.target) && !hamburgerMenuBtn.contains(event.target)) {
-                menu.classList.remove("show");
-                hamburgerMenuBtn.classList.remove("open");
-            }
-        });
-    </script>
-</body>
-</html>-->
