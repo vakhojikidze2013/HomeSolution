@@ -1,18 +1,27 @@
 var isMainPage = true;
-
+var apperance = 0;
 
 
 function openAboutPage() {
-    $("#banner_cover").html("");
-    loadPageWithCaption(
-        "#main-service-load-container",
-        "htmls/About.html");
-    loadPageWithCaption(
-        "#slider-service-load-container");
 
-    headerAnimationIsActive = false;
-    window.scrollTo(0, 0); 
+    closeAboutPage();
+    console.log(apperance);
+    loadPageWithCaption(
+        "#about-load-containter",
+        "htmls/About.html");
+
+    apperance++;
+    
+    //$("#banner_cover").html("");
+    //loadPageWithCaption(
+    //    "#slider-service-load-container");
+    //headerAnimationIsActive = false;
+    //window.scrollTo(0, 0); 
 }
+function closeAboutPage() {
+if (apperance >= 1) location.reload();
+}
+
 function openMobileAboutPage() {
 
     loadPageWithCaption(
@@ -214,16 +223,57 @@ var currentLanguage = "en";
 //     }
 // }, 200);
 
-function scrollAnimation() {
+//function scrollAnimation() {
 
-    $("dm").html("");
-    loadPageWithCaption("#dm", "/htmls/desktopMain.html", null, function () {
-        setTimeout(() =>
-        {
-            $('html, body').animate({
-                scrollTop: $("#slider-service-load-container").offset().top
-            }, 1000);
-            
-        }, 250)
-    });
+//    $("#dm").html("");
+//    loadPageWithCaption("#dm", "/htmls/desktopMain.html", null, function () {
+//        setTimeout(() => {
+//            $('html, body').animate({
+//                scrollTop: $("#slider-service-load-container").offset().top
+//            }, 500);
+
+//        }, 250)
+//    });
+//}
+
+function scrollAnimation() {
+    // Store flag in sessionStorage
+    sessionStorage.setItem('shouldScroll', true);
+
+    // Reload the page
+    location.reload();
+}
+
+window.onload = function () {
+    if (sessionStorage.getItem('shouldScroll')) {
+        $('html, body').animate({ scrollTop: $('#slider-service-load-container').offset().top }, 'slow');
+        sessionStorage.removeItem('shouldScroll');
+    }
+};
+
+var backButtonCount = 0;
+window.addEventListener('pageshow', function (event) {
+    
+    if (event.persisted && (window.performance
+        && window.performance.navigation.type === 2)) {
+     
+        backButtonCount++;
+    }
+    if (backButtonCount > 1) {
+        window.history.go(-backButtonCount);
+    } else if (backButtonCount == 1) {
+        location.reload();
+    }
+});
+
+changeLogoIfDarkMode();
+function changeLogoIfDarkMode() {
+
+    var mobileLogo = `<img id="logo" src="../content/img/header-banner.png" onclick="location.reload();">`
+    var mobileLogoDark = `<img id="logo" src="../content/img/header-banner-white.png" onclick="location.reload();">`
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.getElementById("logo").innerHTML = mobileLogoDark;
+} else {
+    document.getElementById("logo").innerHTML = mobileLogo
+}
 }

@@ -38,4 +38,6 @@
     word-wrap: break-word;
     z-index: 2;
     position: relative;
+    font-weight: 600;
+    text-shadow: 2px 2px black;
 }

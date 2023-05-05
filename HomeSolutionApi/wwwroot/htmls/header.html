@@ -22,9 +22,9 @@
 
     <div id="bottom-section">
         <ul class="navigation-ul">
-            <li class="nav" id="nav1" onclick="openHomePage()"><div id="nav.caption.1"></div></li>
+            <!--<li class="nav" id="nav1" onclick="openHomePage()"><div id="nav.caption.1"></div></li>-->
             <li class="nav" id="nav2" onclick="scrollAnimation()"><div id="nav.caption.2"></div></li>
-            <li class="nav" id="nav3" onclick="openGalleryPage()"><div id="nav.caption.3"></div></li>
+            <!--<li class="nav" id="nav3" onclick="openGalleryPage()"><div id="nav.caption.3"></div></li>-->
             <!--<li class="nav" id="nav4"><div id="nav.caption.4"></div></li>-->
             <li class="nav" id="nav5" onclick="openAboutPage()"><div id="nav.caption.5"></div></li>
         </ul>
@@ -99,9 +99,9 @@
         
         // gallery hover js
         
-            const nav3 = document.getElementById("nav3");
-            const galleryDiv = document.getElementById("gallery_div_for_hover");
-        const header = document.getElementById("nav3");       
+            var nav3 = document.getElementById("nav3");
+            var galleryDiv = document.getElementById("gallery_div_for_hover");
+            var header = document.getElementById("nav3");       
         
 
             nav3.addEventListener("mouseover", () => {
