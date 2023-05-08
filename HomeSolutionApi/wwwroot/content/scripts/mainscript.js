@@ -204,8 +204,21 @@ $(document).ready(function () {
 });
 
 
+
 // Define a variable to store the current language
-var currentLanguage = "en";
+var storedLanguage = getLocalStorage(LANGUAGECODELOCALSTORAGEKEY);
+
+localisedLanguage();
+
+function localisedLanguage() { 
+
+    if (storedLanguage == null) {
+        setLocalStorage(LANGUAGECODELOCALSTORAGEKEY, "en")
+        storedLanguage = getLocalStorage(LANGUAGECODELOCALSTORAGEKEY);
+    }
+}
+
+
 
 // function getAllCaptionWait() {
 //     setTimeout(getAllCaptionAndSet, 1499);

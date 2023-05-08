@@ -14,14 +14,14 @@ function getMainUrlDomain(){
     }
 }
 
-function getAllCaptionAndSet(path) {
+function getAllCaptionAndSet() {
     $.getJSON(`${getMainUrlDomain()}content/json/languagesCaptions.json`, function (result) {
 
         $.each(result, function (i, field) {
             let currentElement = document.getElementById(field.key);
             if (currentElement != null) {
 
-                currentElement.innerHTML = field.value[currentLanguage]
+                currentElement.innerHTML = field.value[storedLanguage]
             }
 
         });
@@ -41,15 +41,18 @@ function loadPageWithCaption(container, path, otherCont ){
         });
 }
 
+function setLocalStorage(key, value) {
+    localStorage.setItem(key, value);
+}
 
 function getLocalStorage(param) {
     var item = localStorage.getItem(param);
     return item;
 }
 
-function setLocalStorage(key, value) {
-    localStorage.setItem(key, value);
-}
+
+
+
 //function scrollToServiceInfo() {
 //    const serviceInfoId = document.getElementById("default-service-info");
 //    //setTimeout(5000);
