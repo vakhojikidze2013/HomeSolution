@@ -204,8 +204,21 @@ $(document).ready(function () {
 });
 
 
+
 // Define a variable to store the current language
-var currentLanguage = "en";
+var storedLanguage = getLocalStorage(LANGUAGECODELOCALSTORAGEKEY);
+
+localisedLanguage();
+
+function localisedLanguage() { 
+
+    if (storedLanguage == null) {
+        setLocalStorage(LANGUAGECODELOCALSTORAGEKEY, "en")
+        storedLanguage = getLocalStorage(LANGUAGECODELOCALSTORAGEKEY);
+    }
+}
+
+
 
 // function getAllCaptionWait() {
 //     setTimeout(getAllCaptionAndSet, 1499);
@@ -251,19 +264,20 @@ window.onload = function () {
     }
 };
 
-//var backButtonCount = 1;
-//window.addEventListener('pageshow', function (event) {
+var backButtonCount = 0;
+window.addEventListener('pageshow', function (event) {
     
-//    if (event.persisted && (window.performance
-//        && window.performance.navigation.type === 2)) {
+    if (event.persisted && (window.performance
+        && window.performance.navigation.type === 2)) {
      
-//        backButtonCount++;
-//    }
-//    if (backButtonCount > 1) {
-//        window.history.go(-backButtonCount);
-//    } else {
-//        location.reload();    }
-//});
+        backButtonCount++;
+    }
+    if (backButtonCount > 1) {
+        window.history.go(-backButtonCount);
+    } else if (backButtonCount == 1) {
+        location.reload();
+    }
+});
 
 changeLogoIfDarkMode();
 function changeLogoIfDarkMode() {
