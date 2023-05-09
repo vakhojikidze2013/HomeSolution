@@ -83,19 +83,24 @@
     <script>
         // Add an onclick event to the "english" div to switch to English
         document.getElementById("English").onclick = function () {
-            currentLanguage = "en";
-            getAllCaptionAndSet();
-            var item = getLocalStorage(LANGUAGECODELOCALSTORAGEKEY)
-            if (item == null) {
-                setLocalStorage(LANGUAGECODELOCALSTORAGEKEY, currentLanguage);
+            let en = "en";
+            if (storedLanguage != en) {
+                setLocalStorage(LANGUAGECODELOCALSTORAGEKEY, en);
+                storedLanguage = en;
+                getAllCaptionAndSet();
             }
         };
 
         // Add an onclick event to the "georgian" div to switch to Georgian
         document.getElementById("Georgian").onclick = function () {
-            currentLanguage = "ge";
-            getAllCaptionAndSet();
+            let ge = "ge";
+            if (storedLanguage != ge) {
+                setLocalStorage(LANGUAGECODELOCALSTORAGEKEY, ge);
+                storedLanguage = ge;
+                getAllCaptionAndSet();
+            }
         };
+
         
         // gallery hover js
         
@@ -124,7 +129,6 @@
                 galleryDiv.style.display = "none";
             });
         
-
     </script>
 </body>
 </html>

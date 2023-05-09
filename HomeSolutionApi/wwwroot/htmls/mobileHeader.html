@@ -8,31 +8,23 @@
 <body>
     <header>
         <div class="header-con">
-            <nav role="navigation">
-                <div id="menuToggle">
-                    <input type="checkbox">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul id="menu">
-                        <li id="font-color"><div id="nav.caption.1" onclick="location.reload();"></div></li>
-                        <li onclick="openMobileGalleryPage()"><div id="nav.caption.3"></div></li>
-                        <li onclick="openMobileAboutPage()"><div id="nav.caption.5"></div></li>
-
-                    </ul>
-                </div>
-            </nav>
-            <img id="logo" src="/content/img/header-banner.png" onclick="location.reload();">
+            <button id="hamburger-menu-btn">☰</button>
+            <ul id="menu">
+                <li id="font-color"><div id="nav.caption.1" onclick="location.reload();">Home</div></li>
+                <!--<li onclick="openMobileGalleryPage()"><div id="nav.caption.3"></div></li>-->
+                <li onclick="openMobileAboutPage()"><div id="nav.caption.5">About</div></li>
+            </ul>
+        </div>  
+            <img id="logo" src="../content/img/header-banner.png" onclick="location.reload();">
             <a href="tel:+995595030328"><p class="number">595 03 03 28</p></a>
             <div class="selected-lang">
                 <p id="English" class="hypert" language="english">ENG</p>
                 <p class="hypert">/</p>
                 <p id="Georgian" class="hypert" language="georgian">ქარ</p>
             </div>
-        </div>
     </header>
     <script>
-    // Add an onclick event to the "english" div to switch to English
+        // Add an onclick event to the "english" div to switch to English
         document.getElementById("English").onclick = function () {
             currentLanguage = "en";
             getAllCaptionAndSet();
@@ -44,6 +36,20 @@
             getAllCaptionAndSet();
 
         };
+        const hamburgerMenuBtn = document.getElementById("hamburger-menu-btn");
+      const menu = document.getElementById("menu");
+
+      hamburgerMenuBtn.addEventListener("click", () => {
+        hamburgerMenuBtn.classList.toggle("open");
+        menu.classList.toggle("show");
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!menu.contains(event.target) && !hamburgerMenuBtn.contains(event.target)) {
+          menu.classList.remove("show");
+          hamburgerMenuBtn.classList.remove("open");
+        }
+      });
     </script>
 </body>
 </html>
