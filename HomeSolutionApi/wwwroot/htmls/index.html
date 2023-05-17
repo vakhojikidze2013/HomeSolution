@@ -35,11 +35,13 @@
 
             //$('#mm').load('htmls/mobileMain.html');
             loadPageWithCaption("#mm", "htmls/mobileMain.html");
+            isMobile = true;
 
         }
         else {
             //$("#dm").load("/htmls/desktopMain.html");
             loadPageWithCaption("#dm", "/htmls/desktopMain.html");
+            isMobile = false;
         }
     </script>
 

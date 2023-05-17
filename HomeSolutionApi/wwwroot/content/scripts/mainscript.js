@@ -264,29 +264,11 @@ window.onload = function () {
     }
 };
 
-var backButtonCount = 0;
-window.addEventListener('pageshow', function (event) {
-    
-    if (event.persisted && (window.performance
-        && window.performance.navigation.type === 2)) {
-     
-        backButtonCount++;
-    }
-    if (backButtonCount > 1) {
-        window.history.go(-backButtonCount);
-    } else if (backButtonCount == 1) {
-        location.reload();
-    }
+
+history.pushState(null, null, this.document.URL)
+window.addEventListener('popstate', function () {
+    history.pushState(null, null, this.document.URL);
+    location.reload();
 });
 
-changeLogoIfDarkMode();
-function changeLogoIfDarkMode() {
 
-    var mobileLogo = `<img id="logo" src="../content/img/header-banner.png" onclick="location.reload();">`
-    var mobileLogoDark = `<img id="logo" src="../content/img/header-banner-white.png" onclick="location.reload();">`
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.getElementById("logo").innerHTML = mobileLogoDark;
-} else {
-    document.getElementById("logo").innerHTML = mobileLogo
-}
-}
