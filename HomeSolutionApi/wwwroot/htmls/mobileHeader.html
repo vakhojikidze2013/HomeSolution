@@ -24,17 +24,24 @@
             </div>
     </header>
     <script>
-        // Add an onclick event to the "english" div to switch to English
+       // Add an onclick event to the "english" div to switch to English
         document.getElementById("English").onclick = function () {
-            currentLanguage = "en";
-            getAllCaptionAndSet();
+            let en = "en";
+            if (storedLanguage != en) {
+                setLocalStorage(LANGUAGECODELOCALSTORAGEKEY, en);
+                storedLanguage = en;
+                getAllCaptionAndSet();
+            }
         };
 
         // Add an onclick event to the "georgian" div to switch to Georgian
         document.getElementById("Georgian").onclick = function () {
-            currentLanguage = "ge";
-            getAllCaptionAndSet();
-
+            let ge = "ge";
+            if (storedLanguage != ge) {
+                setLocalStorage(LANGUAGECODELOCALSTORAGEKEY, ge);
+                storedLanguage = ge;
+                getAllCaptionAndSet();
+            }
         };
         const hamburgerMenuBtn = document.getElementById("hamburger-menu-btn");
       const menu = document.getElementById("menu");
