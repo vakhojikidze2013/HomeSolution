@@ -5,6 +5,8 @@
     margin-left: 27%;
     margin-right: 27%;
     background-color: rgb(226, 226, 226);
+    overflow-y: scroll;
+    height: 80vh;
 }
 #about-load-containter {
     position: fixed;

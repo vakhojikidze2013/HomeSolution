@@ -41,6 +41,7 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     transition: left 0.3s ease-in-out;
     margin-top: 40px;
+    z-index: 200;
 }
 
     #menu.show {
