@@ -1,9 +1,9 @@
 ﻿#about {
     text-align: center;
-    padding: 0px;
+    padding: 10px;
     border: 2px solid;
-    margin-left: 27%;
-    margin-right: 27%;
+    margin-left: 3%;
+    margin-right: 3%;
     background-color: rgb(226, 226, 226);
     overflow-y: scroll;
     height: 80vh;
